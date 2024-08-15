@@ -13,7 +13,12 @@ from django.db.models import Avg
 # Create your views here.
 
 def display_index(request):
-    return HttpResponse("Hello World!")
+    
+    return render(
+        request,
+        "index/index.html", {
+        }
+    )
 
 
 class TakeawayList(generic.ListView):
