@@ -1,1 +1,1 @@
-web: gunicorn bytetoend.wsgi
+web: gunicorn bytetoeat.wsgi
