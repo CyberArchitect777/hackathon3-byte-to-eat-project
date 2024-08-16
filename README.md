@@ -36,6 +36,8 @@ Designing a personalised website where users can rate local takeaways, add perso
 
 ## Live Deployment
 
+Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com/
+
 ## Design
 
 ## Wireframes 
