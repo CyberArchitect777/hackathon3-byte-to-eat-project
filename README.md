@@ -31,14 +31,22 @@ Together we are Snack Overflow!
 Designing a personalised website where users can rate local takeaways, add personal notes " I like the Korma here, but my partner doesn't like the Garlic Chilli Chicken". The option to add more restaurants and to do lists suchs as restaurants to try via check list. 
 
 ## Agile
+An agile methodology was deployed for this project, adhering to MoSCoW principles. 
 
 ### Must Haves 
+Login Page
+User Area
+Ability to add takeaways.
+Leave a comment/review
 
 ### Should haves
+Add new takeaways to try to a checklist
 
 ### Could have
+A public facing area showing all reviewed takeaways. 
 
 ### Won't Have
+Email / reset password login
 
 ## Project Boards
 Github Project Board
