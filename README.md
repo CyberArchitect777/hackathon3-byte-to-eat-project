@@ -91,7 +91,7 @@ Register Food / Review \
 ## Credits
 
 ## Content Credit
-Images from Unsplash.com 
+Images from Unsplash.com & Freepik.com
 
 ## Further Thoughts
 
