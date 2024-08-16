@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    background: #172408 url("https://res.cloudinary.com/dp1ehadna/image/upload/v1723822653/heroimage_pdpk38.jpg") no-repeat center/cover fixed;
+}
+
 /* Header styles */
 
 header, nav {
