@@ -18,6 +18,11 @@ header .nav-link, header .nav-brand {
     color: white;
 }
 
+.nav-link:hover, .nav-link:focus, .nav-link:focus-visible {
+    text-decoration: underline;
+    color: white;
+}
+
 header img {
     width: 150px;
 }
