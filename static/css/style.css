@@ -24,6 +24,14 @@ header, nav {
 /*    background-color: rgba(240, 240, 240, 0.8); */
 }
 
+.signingbutton {
+    background-color: yellow; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 0; 
+    border: none;
+}
+
 .djangomessage {
     color: black;
     font-weight: 600;
