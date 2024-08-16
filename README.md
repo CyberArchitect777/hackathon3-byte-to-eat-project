@@ -1,4 +1,6 @@
 # Byte 2 Eat
+![image](https://github.com/user-attachments/assets/a7fc73bf-10f8-4ffa-af78-daa3be85604e)
+
 
 ## Contents
 - [By Team](by-team)
