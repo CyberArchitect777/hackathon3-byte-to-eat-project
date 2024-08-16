@@ -34,7 +34,7 @@ Designing a personalised website where users can rate local takeaways, add perso
 
 ## Project Boards
 Github Project Board
-https://github.com/users/CyberArchitect777/projects/11
+https://github.com/users/CyberArchitect777/projects/11 \
 Miro Board
 https://miro.com/app/board/uXjVKpKknpw=/
 
