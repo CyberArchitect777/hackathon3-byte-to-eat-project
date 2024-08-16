@@ -35,12 +35,18 @@ footer i {
 
 /* Sign in and Log Out pages */
 
+.welcome {
+    text-align: center;
+    justify-content: center;
+}
+
 .signing {
     color: black;
     font-weight: 600;
     text-align: center;
 /*    background-color: rgba(240, 240, 240, 0.8); */
 }
+
 
 .djangomessage {
     color: black;
