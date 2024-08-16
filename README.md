@@ -32,6 +32,14 @@ Designing a personalised website where users can rate local takeaways, add perso
 
 ## Agile
 
+### Must Haves 
+
+### Should haves
+
+### Could have
+
+### Won't Have
+
 ## Project Boards
 Github Project Board
 https://github.com/users/CyberArchitect777/projects/11 \
