@@ -14,13 +14,23 @@
     <div class="row">
         <h2> Sort by: </h2>
         <div class="col">
+
+            <!-- Options user can sort by -->
             <select name="sort_by" class="form-control">
-                <option value="booking_date" {% if request.GET.sort_by == 'booking_date' %}selected{% endif %}>Date
+                <option value="review_date" {% if request.GET.sort_by == "review_date" %}selected{% endif %}>Date
                 </option>
-                <!-- Add more here sorting options as needed -->
+                <option value="takeaway_name" {% if request.GET.sort_by == "takeaway_name" %}selected{% endif %}>
+                    Takeaway Name</option>
+                <option value="food_type" {% if request.GET.sort_by == "food_type" %}selected{% endif %}>food_type
+                </option>
+                <option value="rating" {% if request.GET.sort_by == "rating" %}selected{% endif %}>Rating</option>
+                <option value="order_again" {% if request.GET.sort_by == "order_again" %}selected{% endif %}>Would you
+                    order from again?</option>
+                <!-- Add more sorting options here as needed -->
             </select>
         </div>
 
+        <!-- Option to sort list by ascending or descending -->
         <div class="col">
             <select name="sort_order" class="form-control">
                 <option value="asc" {% if request.GET.sort_order == 'asc' %}selected{% endif %}>Ascending</option>
@@ -28,6 +38,7 @@
             </select>
         </div>
 
+        <!-- Sort button -->
         <div class="col">
             <button type="submit" class="btn btn-primary">Sort</button>
         </div>
@@ -39,32 +50,33 @@
 <!-- Displays user's takeaway reviews in an easy to read table-->
 <div class="container mt-4">
     <h1 class="text-center">Your Takeaway Reviews</h1>
-    {% if bookings %}
+    {% if reviews %}
+    <!-- Change to name of model-->
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
-                <th>Booking ID</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Table</th>
-                <th>Guests</th>
-                <th>Special Requests</th>
+                <th>Review Date</th>
+                <th>Takeaway Name</th>
+                <th>Food Type</th>
+                <th>Rating</th>
+                <th>Would you order from here again?</th>
+                <th>Notes</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            {% for booking in bookings %}
+            {% for review in reviews %}
             <tr>
-                <td>{{ booking.booking_id }}</td>
-                <td>{{ booking.booking_date }}</td>
-                <td>{{ booking.booking_time }}</td>
-                <td>{{ booking.table_booked }}</td>
-                <td>{{ booking.num_of_guests }}</td>
-                <td>{{ booking.special_requests }}</td>
+                <td>{{ review.review_date }}</td>
+                <td>{{ review.takeaway_name }}</td>
+                <td>{{ review.food_type }}</td>
+                <td>{{ review.rating }}</td>
+                <td>{{ review.order_again }}</td>
+                <td>{{ review.notes }}</td>
                 <td>
-                    <!-- Buttons that give the user the option to edit or delete their booking -->
-                    <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary btn-sm">Edit Booking</a>
-                    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete Booking</a>
+                    <!-- Buttons that give the user the option to edit or delete their booking 
+                    <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary btn-sm">Edit</a> This url will need updating
+                    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a> This url will need updating -->
                 </td>
             </tr>
             {% endfor %}
@@ -72,12 +84,12 @@
     </table>
     <!-- If there are no reviews, this message will display instead -->
     {% else %}
-    <p class="text-center">No reviews found.</p>
+    <p class="text-center">No reviews found. Get started by clicking the button below.</p>
     {% endif %}
 
     <!--Create Booking Button -->
     <div class="text-center">
-        <a href="{% url 'create_booking' %}" class="btn btn-warning btn-lg">Create a Booking</a>
+       <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="btn btn-warning btn-lg">Add a Review</a> <!--This url will need updating -->
     </div>
 </div>
 {% endblock %}

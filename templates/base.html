@@ -51,7 +51,7 @@
                         {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/userprofile/' %}{% endif %}" aria-current="page"
-                                href="{% url 'userprofile' %}">Profile</a>
+                                href="{% url 'display_profile' %}">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}{% endif %}" aria-current="page"
