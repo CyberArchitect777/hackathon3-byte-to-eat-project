@@ -31,6 +31,22 @@ Together we are Snack Overflow!
 Designing a personalised website where users can rate local takeaways, add personal notes " I like the Korma here, but my partner doesn't like the Garlic Chilli Chicken". The option to add more restaurants and to do lists suchs as restaurants to try via check list. 
 
 ## Agile
+An agile methodology was deployed for this project, adhering to MoSCoW principles. 
+
+### Must Haves 
+Login Page
+User Area
+Ability to add takeaways.
+Leave a comment/review
+
+### Should haves
+Add new takeaways to try to a checklist
+
+### Could have
+A public facing area showing all reviewed takeaways. 
+
+### Won't Have
+Email / reset password login
 
 ## Project Boards
 Github Project Board
@@ -44,7 +60,23 @@ Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.
 
 ## Design
 
+Purple: #5058A8 \
+Fork grey: #BCBEC0 \
+Circle grey: #F0F2F1 
+
 ## Wireframes 
+Website Wireframes were created in Balsalmiq.
+Main Page \
+![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
+
+Register / Login \
+![byte_2_eat_-_register_720](https://github.com/user-attachments/assets/19187be5-03c2-4fa9-af80-d575988784de)
+
+Register Food / Review \
+![byte_2_eat_-_user_food_form_720](https://github.com/user-attachments/assets/d0114c95-fd52-415e-b4d1-9a1ded14e572)
+
+
+
 
 ## Features
 
@@ -59,7 +91,7 @@ Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.
 ## Credits
 
 ## Content Credit
-
+Images from Unsplash.com 
 
 ## Further Thoughts
 

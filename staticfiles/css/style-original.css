@@ -1,0 +1,117 @@
+/* Universal Styles */
+
+body {
+    font-family: Oswald, sans-serif;
+    background: url("https://res.cloudinary.com/dzkbptwr7/image/upload/v1723543154/carewpub_to05vr.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+    background-color: black;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #C6A15B;
+    color: black
+}
+
+nav a {
+    color: black !important;
+}
+
+/* Main Page and Content */
+
+#title {
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    font-size: 150px;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+/* card background change on hover and text not underlined due to links */
+.card-link {
+    text-decoration: none !important;
+}
+
+.border-warning:hover {
+    border-color: blue !important;
+}
+
+/* About Page */
+
+#aboutcarew {
+    text-align: center;
+}
+
+/* Sign in and Log Out pages */
+
+.signing {
+    color: black;
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.djangomessage {
+    color: #000000;
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    padding-right: 24px;
+    /* Space for arrow */
+    font-size: 16px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"><path fill="none" stroke="%23333" stroke-width="2" d="M1 1l5 5 5-5"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px 10px;
+}
+
+/* Footer */
+#footer {
+    background-color: #C6A15B;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    padding: 0;
+    z-index: 1000;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem;
+    color: black;
+    font-size: medium;
+
+}
+
+footer i {
+    font-size: 1rem;
+}
+
+footer a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 200%;
+    }
+}

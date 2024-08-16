@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = [ ".herokuapp.com", "8000-cyberarchit-hackathon3b-ull0cugjzey.ws.codeinstitute-ide.net", ]
+ALLOWED_HOSTS = [ ".herokuapp.com", ".ws.codeinstitute-ide.net", ]
 
 # Application definition
 
