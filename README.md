@@ -20,12 +20,7 @@
 
 ## By Team
 
-Barrie 
-Christina
-Aeryx
-Samuel
-Jamie
-Leander
+Barrie, Christina, Aeryx, Samuel, Jamie, Leander
 
 Together we are Snack Overflow! 
 
