@@ -1,4 +1,4 @@
-# Byte 2 Eat
+ # Byte 2 Eat
 ![image](https://github.com/user-attachments/assets/a7fc73bf-10f8-4ffa-af78-daa3be85604e)
 
 
@@ -6,7 +6,7 @@
 - [By Team](by-team)
 - [About](#about)
 - [Agile](#Agile) 
-- [Project Board](#Project-Board)
+- [Project Boards](#Project-Boards)
 - [Live Deployment](#Live-Deployment)
 - [Design](#Design)
 - [Wireframes](#Wireframes)
@@ -32,7 +32,11 @@ Designing a personalised website where users can rate local takeaways, add perso
 
 ## Agile
 
-## Project Board
+## Project Boards
+Github Project Board
+https://github.com/users/CyberArchitect777/projects/11 \
+Miro Board
+https://miro.com/app/board/uXjVKpKknpw=/
 
 ## Live Deployment
 
