@@ -1,5 +1,37 @@
 
 <!-- Base template code found on all pages imported here -->
 {% extends "base.html" %}
-
+{% load i18n %}
+{% load account socialaccount %}
 {% load static %}
+
+{% block content %} <!-- Start a block if you intend to override it in child templates -->
+
+{% if user.is_authenticated %}
+
+{% else %}
+<!-- If user is NOT logged in display sign in details -->
+<div class="container welcome signing">
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <h3>{% trans "Nom Nom Nom" %}</h3>
+  
+        <p></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn signingbutton" type="submit">{% trans "Log In" %}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% endblock content %}

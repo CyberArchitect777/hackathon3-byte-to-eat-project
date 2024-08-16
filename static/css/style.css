@@ -17,6 +17,11 @@ header, nav {
 
 /* Sign in and Log Out pages */
 
+.welcome {
+    text-align: center;
+    justify-content: center;
+}
+
 .signing {
     color: black;
     font-weight: 600;
