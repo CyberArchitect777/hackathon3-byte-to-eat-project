@@ -44,9 +44,9 @@ Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.
 
 ## Design
 
-Purple: #5058A8
-Fork grey: #BCBEC0
-Circle grey: #F0F2F1
+Purple: #5058A8 \
+Fork grey: #BCBEC0 \ 
+Circle grey: #F0F2F1 \
 
 ## Wireframes 
 Website Wireframes were created in Balsalmiq.
