@@ -1,19 +1,37 @@
 
+/* Page styles */
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
+/* Header styles */
+
 header, nav {
     background-color: #5058A8;
     color: white;
 }
 
-.nav-link, .nav-brand {
+header .nav-link, header .nav-brand {
     color: white;
 }
 
+header img {
+    width: 150px;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #5058A8;
+    color: white;
+}
+
+footer i {
+    color: white;
+}
 
 /* Sign in and Log Out pages */
 
@@ -29,19 +47,6 @@ header, nav {
 /*    background-color: rgba(240, 240, 240, 0.8); */
 }
 
-.signingbutton {
-    background-color: #F4C542; 
-    color: black;
-    width: 150px;
-    height: 50px; 
-    border: 2px solid black; 
-    border-radius: 5px; 
-    font-size: 16px;
-    font-weight: bold; 
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-}
 
 .djangomessage {
     color: black;
@@ -50,6 +55,10 @@ header, nav {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
-footer {
-    background-color: #5058A8;
+.signingbutton {
+    background-color: yellow; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 0; 
+    border: none;
 }
