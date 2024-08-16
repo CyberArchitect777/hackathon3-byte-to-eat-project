@@ -27,6 +27,8 @@ Samuel
 Jamie
 Leander
 
+Together we are Snack Overflow! 
+
 ## About
 
 Designing a personalised website where users can rate local takeaways, add personal notes " I like the Korma here, but my partner doesn't like the Garlic Chilli Chicken". The option to add more restaurants and to do lists suchs as restaurants to try via check list. 
