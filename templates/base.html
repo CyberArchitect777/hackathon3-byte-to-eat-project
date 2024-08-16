@@ -50,6 +50,10 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         {% if user.is_authenticated %}
                         <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/userprofile/' %}{% endif %}" aria-current="page"
+                                href="{% url 'userprofile' %}">Profile</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}{% endif %}" aria-current="page"
                                 href="{% url 'account_logout' %}">Logout</a>
                         </li>

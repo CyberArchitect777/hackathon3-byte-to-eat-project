@@ -42,6 +42,12 @@ footer i {
     color: white;
 }
 
+/* Register page */
+
+.login li, #signup_form li {
+    list-style: none;
+}
+
 /* Sign in and Log Out pages */
 
 .welcome {
