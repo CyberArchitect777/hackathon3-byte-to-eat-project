@@ -14,6 +14,23 @@ header, nav {
     color: white;
 }
 
+
+/* Sign in and Log Out pages */
+
+.signing {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+/*    background-color: rgba(240, 240, 240, 0.8); */
+}
+
+.djangomessage {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
 footer {
     background-color: #5058A8;
 }
