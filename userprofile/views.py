@@ -10,7 +10,7 @@ def display_profile(request):
 
 # User dashboard that shows all their reviews
 def review_dashboard(request):
-    return render(request, "userprofile/reviewdashboard.html")
+    return render(request, "userprofile/review_dashboard.html") # Redirects User to dashboard with all their reviews
 
 
 # Add a review
@@ -21,7 +21,7 @@ def add_review(request):
             review = form.save(commit=False)
             review.user = request.user
             review.save()
-            return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
+            return redirect("userprofile/review_dashboard.html") # Redirects User to dashboard with all their reviews
     else:
         form = ReviewForm()
     return render(request, "userprofile/add_review.html", {"form": form})
@@ -35,7 +35,7 @@ def edit_review(request, pk):
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             review.save()
-        return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
+        return redirect("userprofile/review_dashboard") # Redirects User to dashboard with all their reviews
 else: 
     form = ReviewForm(instance=review)
 return render(request,"userprofile/edit_review.html", {"form": form, "review": review})
@@ -45,5 +45,5 @@ return render(request,"userprofile/edit_review.html", {"form": form, "review": r
 def delete_review(request, pk):
     review = Review.objects.get(pk=pk)
     review.delete()
-        return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
+        return redirect("userprofile/review_dashboard") # Redirects User to dashboard with all their reviews
 
