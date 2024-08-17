@@ -28,13 +28,32 @@ class Review(models.Model):
     """
 
     FOOD_TYPE_CHOICES = [
-        (0, "Chinese"),
-        (1, "Curry"),
-        (2, "Pizza"),
-        (3, "Sushi"),
-        (4, "Burgers"),
-        (5, "Fish & Chips"),
-        (6, "Other"),
+        (0, "Indian"),
+        (1, "Italian"),
+        (2, "Chinese"),
+        (3, "Thai"),
+        (4, "Japanese"),
+        (5, "Mexican"),
+        (6, "British"),
+        (7, "French"),
+        (8, "Greek"),
+        (9, "American"),
+        (10, "Turkish"),
+        (11, "Korean"),
+        (12, "Vietnamese"),
+        (13, "Spanish"),
+        (14, "Lebanese"),
+        (15, "Caribbean"),
+        (16, "Other"),
+
+        # (0, "Chinese"),
+        # (1, "Curry"),
+        # (2, "Pizza"),
+        # (3, "Sushi"),
+        # (4, "Burgers"),
+        # (5, "Fish & Chips"),
+        # (6, "Other"),
+        
     ] # Can add more food choice options here in the future
 
     poster = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer") #Unique poster/user id
