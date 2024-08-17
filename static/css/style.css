@@ -50,8 +50,8 @@ footer i {
 
 /* This is to help the text on the page stand out from the background image */
 .text-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-    padding: 5px 10px; /* Adjust padding as needed */
+    background: rgba(255, 255, 255, 0.97); /* White with 50% transparency */
+    padding: 10px 0px; /* Adjust padding as needed */
     display: inline-block; /* Ensures effect only takes up the width of the text */
     border-radius: 5px; /* Adds rounded corners */
 }
