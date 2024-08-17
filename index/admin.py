@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from .models import Takeaway, Review
+from .models import Review
 from django_summernote.admin import SummernoteModelAdmin
 
 
