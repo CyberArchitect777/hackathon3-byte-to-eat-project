@@ -71,8 +71,8 @@
                 <td>{{ review.review_content }}</td>
                 <td>
                     <!-- Buttons that give the user the option to edit or delete their booking 
-                    <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary btn-sm">Edit</a> This url will need updating
-                    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a> This url will need updating -->
+                    <a href="{% url 'update_booking' review.pk %}" class="btn btn-primary btn-sm">Edit</a> This url will need updating
+                    <a href="{% url 'delete_booking' review.pk %}" class="btn btn-danger btn-sm">Delete</a> This url will need updating -->
                 </td>
             </tr>
             {% endfor %}
