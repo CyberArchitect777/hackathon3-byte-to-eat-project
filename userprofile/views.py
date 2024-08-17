@@ -9,13 +9,15 @@ def display_profile(request):
     return render(request,"userprofile/profile.html",)
 
 # User dashboard that shows all their reviews
+@login_required 
 def review_dashboard(request):
     return render(request, "userprofile/review_dashboard.html") # Redirects User to dashboard with all their reviews
 
 
 # Add a review
+@login_required 
 def add_review(request):
-    if request.method = "POST":
+    if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
             review = form.save(commit=False)
@@ -31,19 +33,19 @@ def add_review(request):
 @login_required
 def edit_review(request, pk):
     review = Review.objects.get(pk=pk)
-    if request.method = "POST":
+    if request.method == "POST":
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             review.save()
         return redirect("userprofile/review_dashboard") # Redirects User to dashboard with all their reviews
-else: 
-    form = ReviewForm(instance=review)
-return render(request,"userprofile/edit_review.html", {"form": form, "review": review})
+    else: 
+        form = ReviewForm(instance=review)
+    return render(request,"userprofile/edit_review.html", {"form": form, "review": review})
 
 # Delete a review
 @login_required
 def delete_review(request, pk):
     review = Review.objects.get(pk=pk)
     review.delete()
-        return redirect("userprofile/review_dashboard") # Redirects User to dashboard with all their reviews
+    return redirect("userprofile/review_dashboard") # Redirects User to dashboard with all their reviews
 
