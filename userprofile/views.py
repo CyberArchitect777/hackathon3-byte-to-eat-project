@@ -6,3 +6,6 @@ from django.contrib.auth.decorators import login_required # Ensures only logged 
 @login_required 
 def display_profile(request):
     return render(request,"userprofile/profile.html",)
+
+def review_dashboard(request):
+    return render(request, "userprofile/reviewdashboard.html")
