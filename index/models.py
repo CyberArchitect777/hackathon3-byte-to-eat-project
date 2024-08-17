@@ -26,20 +26,26 @@ class Review(models.Model):
     """
     Stores/Adds a review to the takeaway post
     """
-    # takeaway_name = models.ForeignKey(
-    #     Takeaway, on_delete=models.CASCADE, related_name="reviews"
-    # )
+
+    FOOD_TYPE_CHOICES = [
+("Chinese", "Chinese"),
+("Curry", "Curry"),
+("Pizza", "Pizza"),
+("Sushi", "Sushi"),
+("Burgers", "Burgers"),
+("Fish & Chips", "Fish & Chips"),
+("Other", "Other"),
+    ] # Can add more food choice options here in the future
+
+    poster = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer")
     takeaway_name = models.CharField(max_length=200, unique=False)
+    food_type = models.IntegerField(choices=FOOD_TYPE_CHOICES, default=Chinese) # Default choice would be Chinese - user can just select from drop down menu)
     review_title = models.CharField(max_length=50, unique=False)
     review_content = models.TextField()
-    poster = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="reviewer"
-    )
     rating = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
         default=3
     )
-    # approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
     edited_on = models.DateTimeField(auto_now_add=True)
 
