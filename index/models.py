@@ -49,7 +49,7 @@ class Review(models.Model):
         # (0, "Chinese"),
         # (1, "Curry"),
         # (2, "Pizza"),
-        # (3, "Sushi"),
+        # (3, "Sushi"), # Barrie -> Tina: Can remove these if you are happy with my changes
         # (4, "Burgers"),
         # (5, "Fish & Chips"),
         # (6, "Other"),
