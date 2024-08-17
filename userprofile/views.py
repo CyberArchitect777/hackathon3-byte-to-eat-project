@@ -4,6 +4,12 @@ from index.models import Review
 
 # Create your views here.
 
+@login_required 
+def add_review(request):
+    return render(
+        request, 
+        "userprofile/addareview.html"
+    )
 
 @login_required 
 def review_dashboard(request):
