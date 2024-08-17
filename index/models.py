@@ -28,18 +28,18 @@ class Review(models.Model):
     """
 
     FOOD_TYPE_CHOICES = [
-("Chinese", "Chinese"),
-("Curry", "Curry"),
-("Pizza", "Pizza"),
-("Sushi", "Sushi"),
-("Burgers", "Burgers"),
-("Fish & Chips", "Fish & Chips"),
-("Other", "Other"),
+        (0, "Chinese"),
+        (1, "Curry"),
+        (2, "Pizza"),
+        (3, "Sushi"),
+        (4, "Burgers"),
+        (5, "Fish & Chips"),
+        (6, "Other"),
     ] # Can add more food choice options here in the future
 
     poster = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer") #Unique poster/user id
     takeaway_name = models.CharField(max_length=200, unique=False) # User can enter their own custom name of a takeaway
-    food_type = models.IntegerField(choices=FOOD_TYPE_CHOICES, default="Chinese") # Default choice would be Chinese - user can just select from drop down menu)
+    food_type = models.IntegerField(choices=FOOD_TYPE_CHOICES, default=0) # Default choice would be Chinese - user can just select from drop down menu)
     review_title = models.CharField(max_length=50, unique=False) # Title of review
     review_content = models.TextField() # Textfield where user can add their takeaway review
     rating = models.IntegerField( # User can add a star rating from 1-5

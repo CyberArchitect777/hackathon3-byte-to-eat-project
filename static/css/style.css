@@ -42,6 +42,17 @@ footer i {
     color: white;
 }
 
+/* Index page */
+
+.index-box {
+    background-color: white;
+    color: #5058A8;
+}
+
+#company-logo {
+    min-width: 270px;
+}
+
 /* Register page */
 
 .login li, #signup_form li {
@@ -97,3 +108,14 @@ footer i {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
+/* Media queries */
+
+@media only screen and (min-width: 720px) {
+
+    /* Index page */
+
+    #company-logo {
+        max-width: 600px;
+    }
+
+}
