@@ -1,16 +1,17 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required # Ensures only logged in users will see this page
 from index.models import Review
+from index.forms import ReviewForm
 
 # Create your views here.
 
-# User profile
-@login_required 
-def add_review(request):
-    return render(
-        request, 
-        "userprofile/review_dashboard.html"
-    )
+# User profile - sorry, this is the same as the "Add a Review" def down below. I'm not sure which is correct - Tina
+#@login_required 
+#def add_review(request):
+   # return render(
+       # request, 
+        #"userprofile/review_dashboard.html"
+    #)
 
 @login_required 
 def review_dashboard(request):
