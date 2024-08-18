@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from index import views as index_views
+from userprofile import views as profile_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('summernote/', include('django_summernote.urls')),
+    path("admin/", admin.site.urls),
+    path("summernote/", include("django_summernote.urls")),
     path("accounts/", include("allauth.urls")),
+    path("reviews/", include("userprofile.urls"), name="userprofile-urls"),
     path("", index_views.display_index, name="index"),
 ]

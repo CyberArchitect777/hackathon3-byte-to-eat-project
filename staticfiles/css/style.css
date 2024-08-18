@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    background: white url("https://res.cloudinary.com/dp1ehadna/image/upload/v1723822653/heroimage_pdpk38.jpg") no-repeat center/cover fixed;
+}
+
 /* Header styles */
 
 header, nav {
@@ -15,6 +19,11 @@ header, nav {
 }
 
 header .nav-link, header .nav-brand {
+    color: white;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:focus-visible {
+    text-decoration: underline;
     color: white;
 }
 
@@ -58,6 +67,12 @@ footer i {
     text-align: center;
     display: inline-block;
     text-decoration: none;
+}
+
+.signingbutton:hover {
+    background-color: #F4C542; 
+    color: black; 
+    border-color: black; 
 }
 
 

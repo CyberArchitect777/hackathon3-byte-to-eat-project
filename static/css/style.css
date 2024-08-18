@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    background: white url("https://res.cloudinary.com/dp1ehadna/image/upload/v1723822653/heroimage_pdpk38.jpg") no-repeat center/cover fixed;
+}
+
 /* Header styles */
 
 header, nav {
@@ -36,6 +40,31 @@ footer {
 
 footer i {
     color: white;
+}
+
+/* Index page */
+
+.index-box {
+    background-color: white;
+    color: #5058A8;
+}
+
+#company-logo {
+    min-width: 270px;
+}
+
+/* Register page */
+
+.login li, #signup_form li {
+    list-style: none;
+}
+
+/* This is to help the text on the page stand out from the background image */
+.text-overlay {
+    background: rgba(255, 255, 255, 0.97); /* White with 50% transparency */
+    padding: 10px 0px; /* Adjust padding as needed */
+    display: inline-block; /* Ensures effect only takes up the width of the text */
+    border-radius: 5px; /* Adds rounded corners */
 }
 
 /* Sign in and Log Out pages */
@@ -79,3 +108,14 @@ footer i {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
+/* Media queries */
+
+@media only screen and (min-width: 720px) {
+
+    /* Index page */
+
+    #company-logo {
+        max-width: 600px;
+    }
+
+}

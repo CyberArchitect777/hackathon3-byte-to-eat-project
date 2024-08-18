@@ -4,7 +4,7 @@ from django.shortcuts import (
 )
 from django.views.generic import TemplateView
 from django.views import generic
-from .models import Takeaway, Review
+from .models import Review
 from .forms import ReviewForm
 from django.contrib import messages
 from django.db.models import Avg
@@ -21,19 +21,19 @@ def display_index(request):
     )
 
 
-class TakeawayList(generic.ListView):
-    queryset = Takeaway.objects.all()
+class ReviewList(generic.ListView):
+    queryset = Review.objects.all()
     template_name = "index.html"
 
     def get_queryset(self):
         # Annotate each takeaway with its average rating
-        return Takeaway.objects.filter(status=1).annotate(
+        return Review.objects.filter(status=1).annotate(
             average_rating=Avg('reviews__rating')
-        ).order_by('Takeaway_name')
+        ).order_by('Review_name')
 
 
 def takeaway_detail(request, slug):
-    queryset = Takeaway.objects.filter(status=1)
+    queryset = Review.objects.filter(status=1)
     takeaway = get_object_or_404(queryset, slug=slug)
     reviews = takeaway.reviews.all().order_by("-created_on")
     reviews_count = takeaway.reviews.filter(approved=True).count()
@@ -74,7 +74,7 @@ def takeaway_detail(request, slug):
 
 def review_edit(request, slug, review_id):
     if request.method == "POST":
-        queryset = Takeaway.objects.filter(status=1)
+        queryset = Review.objects.filter(status=1)
         takeaway = get_object_or_404(queryset, slug=slug)
         review = get_object_or_404(Review, pk=review_id)
         review_form = ReviewForm(data=request.POST, instance=review)
@@ -102,7 +102,7 @@ def review_edit(request, slug, review_id):
 
 
 def review_delete(request, slug, review_id):
-    queryset = Takeaway.objects.filter(status=1)
+    queryset = Review.objects.filter(status=1)
     takeaway = get_object_or_404(queryset, slug=slug)
     review = get_object_or_404(Review, pk=review_id)
 
