@@ -16,8 +16,8 @@
             <!-- Options user can sort by -->
             <select name="sort_by" class="form-control dropdown-arrow ">
                 <option value="takeaway_name" {% if request.GET.sort_by == "takeaway_name" %}selected{% endif %}>
-                    Takeaway Name</option>
-                <option value="food_type" {% if request.GET.sort_by == "food_type" %}selected{% endif %}>food_type
+                    Takeaway name</option>
+                <option value="food_type" {% if request.GET.sort_by == "food_type" %}selected{% endif %}>Food type
                 </option>
                 <option value="rating" {% if request.GET.sort_by == "rating" %}selected{% endif %}>Rating</option>
                 <option value="created_on" {% if request.GET.sort_by == "created_on" %}selected{% endif %}>Date
