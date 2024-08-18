@@ -27,6 +27,7 @@ header .nav-link, header .nav-brand {
     color: white;
 }
 
+
 header img {
     width: 150px;
 }
@@ -114,9 +115,6 @@ footer i {
     text-align: center;
 }
 
-.aboutimage {
-    size: 50%;
-}
 
 /* Media queries */
 
