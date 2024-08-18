@@ -12,7 +12,6 @@ from django.views.generic import TemplateView # star ratings instead of numbers
 
 # User dashboard that shows all their reviews
 @login_required
-@require_review_ownership
 @require_superuser
 def review_dashboard(request):
 
