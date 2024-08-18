@@ -4,14 +4,16 @@ from django.contrib import messages # Django's built-in messaging system/feedbac
 from django.urls import reverse_lazy # Handles URL redirection
 from index.models import Review # Import Review model
 from index.forms import ReviewForm # Import Review form
-from .mixins import RequireSuperuserMixin, RequireReviewOwnershipMixin # Import mixins which check for authorized users
+from .decorators import require_review_ownership, require_superuser # Import decorators that check for authorized users
 from django.views.generic import TemplateView # star ratings instead of numbers
 
 # Create your views here.
 
 
 # User dashboard that shows all their reviews
-@login_required 
+@login_required
+@require_review_ownership
+@require_superuser
 def review_dashboard(request):
 
     sort_by = request.GET.get("sort_by", "created_on") # Default sort by date review is created on
@@ -30,6 +32,9 @@ def review_dashboard(request):
     )
 
 # Add a review
+@login_required
+@require_review_ownership
+@require_superuser
 def add_review(request, review_id=None):
     # Checks that a valid user is logged in. If they're not, user will get message and be redirected to login page
     if not request.user.is_authenticated:
@@ -65,6 +70,8 @@ def add_review(request, review_id=None):
 
 # Edit a review
 @login_required
+@require_review_ownership
+@require_superuser
 def edit_review(request, pk):
     review = Review.objects.get(pk=pk)
     if request.method == "POST":
@@ -79,6 +86,8 @@ def edit_review(request, pk):
 
 # Delete a review
 @login_required
+@require_review_ownership
+@require_superuser
 def delete_review(request, pk):
     review = Review.objects.get(pk=pk)
     review.delete()
