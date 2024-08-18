@@ -74,18 +74,15 @@
                         {% endif %}
                     </ul>
                 </div>
+                <div class="row">
+                    {% if user.is_authenticated %}
+                    <p class="text-end m-3">You are logged in as {{ user }}</p>
+                    {% else %}
+                    <p class="text-end m-3">You are not logged in</p>
+                    {% endif %}
+                </div>
             </div>
         </nav>
-        <!-- displaying you are logged in as -->
-        <div class="container loginstatus">
-            <div class="row">
-                {% if user.is_authenticated %}
-                <p class="text-end m-3">You are logged in as {{ user }}</p>
-                {% else %}
-                <p class="text-end m-3">You are not logged in</p>
-                {% endif %}
-            </div>
-        </div>
     </header>
     <main class="container-fluid">
         {% block content %}
