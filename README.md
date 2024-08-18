@@ -83,6 +83,11 @@ Purple: #5058A8 \
 Fork grey: #BCBEC0 \
 Circle grey: #F0F2F1 
 
+We also used the Miro board for inspiration and ideas.
+
+![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
+
+
 ## Wireframes 
 Website Wireframes were created in Balsalmiq.
 Main Page \
