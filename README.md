@@ -4,20 +4,18 @@
 ## Contents
 1. [Introduction](#introduction)
 2. [The Team](#the-team)
-3. [About](#about)
-4. [Agile](#Agile) 
-5. [Project Boards](#Project-Boards)
-6. [Live Deployment](#Live-Deployment)
-7. [Design](#Design)
-8. [Wireframes](#Wireframes)
-9. [Features](#Features)
-10. [Technology](#Technology)
-11. [Future Features](#Future-Features)
-12. [Testing](#Testing)
-13. [Validator Testing](#Validator-Testing)
-14. [Credits](#Credits)
-15. [Content Credit](#Content-Credit)
-16. [Further Thoughts](#Further-Thoughts)
+3. [Planning](#planning)
+4. [Design]{#design}
+5. [Repository, Project Board and Deployment](#project-base)
+6. [Wireframes](#Wireframes)
+7. [Features](#Features)
+8. [Technology](#Technology)
+9. [Future Features](#Future-Features)
+10. [Testing](#Testing)
+11. [Validator Testing](#Validator-Testing)
+12. [Credits](#Credits)
+13. [Content Credit](#Content-Credit)
+14. [Further Thoughts](#Further-Thoughts)
 
 # Introduction
 
@@ -46,7 +44,8 @@ Additional development only (due to other course / personal committments):
 * Jamie Pudsey - (https://github.com/JPudsey-11)
 * Aeryx Rose - (https://github.com/SubjugatorofCSS)
 
-## Planning methodology 
+<a id="planning"></a>
+## Planning Methodology 
 
 Using Agile ideals, the project was designed with the principle of minimum viable product in mind. Therefore, it was decided that a very simple product would be constructed before any additional features were added. It was determined early on that the following features would be applicable to our project. 
 
@@ -66,15 +65,16 @@ Won't do:
 - A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
 - Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
 
-## Project Boards
-Github Project Board
-https://github.com/users/CyberArchitect777/projects/11 \
+## Repository, Project Board and Deployment
+
+Our project details can be found in the following places. 
+
+Project Board - (https://github.com/users/CyberArchitect777/projects/11)
+GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
+Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
+
 Miro Board
 https://miro.com/app/board/uXjVKpKknpw=/
-
-## Live Deployment
-
-Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com/
 
 ## Design
 
