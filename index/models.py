@@ -69,6 +69,8 @@ class Review(models.Model):
     edited_on = models.DateTimeField(auto_now_add=True) # Date review was edited on
 
     class Meta:
+        verbose_name = "Review"
+        verbose_name_plural = "Reviews"
         ordering = ["-created_on"] # Order reviews by date created on
 
     def __str__(self):
