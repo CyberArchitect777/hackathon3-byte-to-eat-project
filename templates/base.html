@@ -24,10 +24,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <!-- Google Fonts-->
@@ -36,7 +37,7 @@
 <body>
     <!-- NavBar -->
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'index' %}"><img
                         src="https://res.cloudinary.com/dp1ehadna/image/upload/v1723817030/szqoxcu6niwd58uzfcuh.png"
@@ -49,15 +50,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="{% url 'about' %}">About</a>
-                        {% if user.is_authenticated %}
-                    <!-- "My Reviews" tab will appear on the Navbar when user is logged in -->
+                            <a class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>
+                            {% if user.is_authenticated %}
+                            <!-- "My Reviews" tab will appear on the Navbar when user is logged in -->
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == '/review-dashboard/' %}{% endif %}" aria-current="page"
-                                href="{% url 'review_dashboard' %}">My Reviews</a>
+                            <a class="nav-link {% if request.path == '/review-dashboard/' %}{% endif %}"
+                                aria-current="page" href="{% url 'review_dashboard' %}">My Reviews</a>
                         </li>
-                    <!-- "Log out" tab will appear on the Navbar when user is logged in -->
+                        <!-- "Log out" tab will appear on the Navbar when user is logged in -->
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}{% endif %}" aria-current="page"
                                 href="{% url 'account_logout' %}">Logout</a>
@@ -73,27 +73,35 @@
                         </li>
                         {% endif %}
                     </ul>
-                    <!-- You are logged in as / not logged in will appear in Navbar -->
-                    {% if user.is_authenticated %}
-                    <p class="text-end m-3">You are logged in as {{ user }}</p>
-                    {% else %}
-                    <p class="text-end m-3">You are not logged in</p>
-                    {% endif %}
                 </div>
             </div>
         </nav>
+        <!-- displaying you are logged in as -->
+        <div class="container-fluid loginstatus">
+            <div class="row">
+                {% if user.is_authenticated %}
+                <p class="text-end m-3">You are logged in as {{ user }}</p>
+                {% else %}
+                <p class="text-end m-3">You are not logged in</p>
+                {% endif %}
+            </div>
+        </div>
     </header>
     <main class="container-fluid">
         {% block content %}
-            <!-- Content Goes here -->   
+        <!-- Content Goes here -->
         {% endblock content %}
     </main>
     <footer class="container-fluid d-flex align-items-center p-2">
         <div class="justify-content-start flex-grow-1">
-            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Visit our X page in a new tab"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Visit our Facebook page in a new tab"><i class="fa-brands fa-facebook"></i></a>
-            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Visit our Instagram page in a new tab"><i class="fa-brands fa-square-instagram"></i></a>
-            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Email us here"><i class="fa-solid fa-envelope"></i></a>
+            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Visit our X page in a new tab"><i
+                    class="fa-brands fa-square-x-twitter"></i></a>
+            <a class="socials mx-2" href="" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page in a new tab"><i class="fa-brands fa-facebook"></i></a>
+            <a class="socials mx-2" href="" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page in a new tab"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="socials mx-2" href="" target="_blank" rel="noopener" aria-label="Email us here"><i
+                    class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="justify-content-end">
             <p class="my-auto">© 2024 Snack Overflow</p>
