@@ -11,8 +11,8 @@ urlpatterns = [
     path("add_review/", views.add_review, name="add_review"),
 
      # So User can edit their existing review
-    path("edit_review/<pk>/", views.edit_review, name="edit_review"),
+    path("edit_review/<int:pk>/", views.edit_review, name="edit_review"),
 
      # So User can delete their existing review
-    path("delete_review/<pk>/", views.delete_review, name="delete_review"),
+    path("delete_review/<int:pk>/", views.delete_review, name="delete_review"),
 ]
