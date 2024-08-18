@@ -27,6 +27,14 @@ header .nav-link, header .nav-brand {
     color: white;
 }
 
+/* align collapsed menu text right */
+@media (max-width: 991.98px) { /* Adjust breakpoint as needed */
+    .navbar-collapse {
+      text-align: right;
+    }
+  }
+
+
 header img {
     width: 150px;
 }
