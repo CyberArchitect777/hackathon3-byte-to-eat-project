@@ -9,7 +9,7 @@ from index.models import Review
 def add_review(request):
     return render(
         request, 
-        "userprofile/addareview.html"
+        "userprofile/review_dashboard.html"
     )
 
 @login_required 
@@ -19,14 +19,14 @@ def review_dashboard(request):
 
     return render(
         request, 
-        "userprofile/reviewdashboard.html", {
+        "userprofile/review_dashboard.html", {
         "user_reviews": user_reviews
         }
     )
 
 # User dashboard that shows all their reviews
 def review_dashboard(request):
-    return render(request, "userprofile/reviewdashboard.html")
+    return render(request, "userprofile/review_dashboard.html")
 
 
 # Add a review
