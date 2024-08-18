@@ -36,7 +36,7 @@ def add_review(request, review_id=None):
         messages.add_message(request, messages.ERROR, "You need to be logged in to add a review.")
         return redirect(reverse("account_login"))
 
-if review_id: # Checks to see if review_id is provided - this means it's checking if that review already exists and will populate it with data from that review
+    if review_id: # Checks to see if review_id is provided - this means it's checking if that review already exists and will populate it with data from that review
         review = get_object_or_404(Review, id=review_id) # If there is a review_id, then the form will populate with data from that existing review
     else:
         review = None # If there is no review_id, then the form will be blank/new and ready to be filled in
@@ -58,8 +58,8 @@ if review_id: # Checks to see if review_id is provided - this means it's checkin
     # This block renders the form template
     return render(
         request,
-        "bookings/booking_form.html",
-        {"form": form, "booking": booking}
+        "userprofile/add_review.html",
+        {"form": form, "review": review}
     )
 
 
