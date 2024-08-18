@@ -1,24 +1,23 @@
  # Byte 2 Eat
 ![image](https://github.com/user-attachments/assets/a7fc73bf-10f8-4ffa-af78-daa3be85604e)
 
-
 ## Contents
-- [Introduction](#introduction)
-- [By Team](#by-team)
-- [About](#about)
-- [Agile](#Agile) 
-- [Project Boards](#Project-Boards)
-- [Live Deployment](#Live-Deployment)
-- [Design](#Design)
-- [Wireframes](#Wireframes)
-- [Features](#Features)
-- [Technology](#Technology)
-- [Future Features](#Future-Features)
-- [Testing](#Testing)
-- [Validator Testing](#Validator-Testing)
-- [Credits](#Credits)
-- [Content Credit](#Content-Credit)
-- [Further Thoughts](#Further-Thoughts)
+1. [Introduction](#introduction)
+2. [The Team](#the-team)
+3. [About](#about)
+4. [Agile](#Agile) 
+5. [Project Boards](#Project-Boards)
+6. [Live Deployment](#Live-Deployment)
+7. [Design](#Design)
+8. [Wireframes](#Wireframes)
+9. [Features](#Features)
+10. [Technology](#Technology)
+11. [Future Features](#Future-Features)
+12. [Testing](#Testing)
+13. [Validator Testing](#Validator-Testing)
+14. [Credits](#Credits)
+15. [Content Credit](#Content-Credit)
+16. [Further Thoughts](#Further-Thoughts)
 
 # Introduction
 
@@ -28,29 +27,44 @@ This website was created during Hackathon 3 of the "16-Week High-Performance Ful
 
 The goal of this Hackathon was to demonstrate the construction of a full-stack web development project using HTML, CSS, JavaScript, Python and Django in a team environment. 
 
+<a id="the-team"></a>
 ## The Team
 
-Barrie, Christina, Aeryx, Samuel, Jamie, Leander
+Together, we are Snack Overflow!
 
-Together we are Snack Overflow! 
+In alphabetical (by surname) order, here are the members of the team:-
 
-## Agile
-An agile methodology was deployed for this project, adhering to MoSCoW principles. 
+The full-time developers: 
 
-### Must Haves 
-Login Page
-User Area
-Ability to add takeaways.
-Leave a comment/review
+* Christina Hughes - (https://github.com/CHughes13)
+* Barrie Millar - (https://github.com/CyberArchitect777)
+* Samuel Parker - (https://github.com/SamuelParkerTech)
 
-### Should haves
-Add new takeaways to try to a checklist
+Additional development only (due to other course / personal committments):
 
-### Could have
-A public facing area showing all reviewed takeaways. 
+* Leander Otis - (https://github.com/LO-CI24)
+* Jamie Pudsey - (https://github.com/JPudsey-11)
+* Aeryx Rose - (https://github.com/SubjugatorofCSS)
 
-### Won't Have
-Email / reset password login
+## Planning methodology 
+
+Using Agile ideals, the project was designed with the principle of minimum viable product in mind. Therefore, it was decided that a very simple product would be constructed before any additional features were added. It was determined early on that the following features would be applicable to our project. 
+
+Must-do:
+
+- A login and registration system for our users to sign in to their private review areas
+- A review screen where comments could be added, edited or deleted.
+- Additional pages for form additions to achieve this as needed.
+- A site that was effortless to use in order to allow users to quickly check in and out to submit their own ideas.
+
+Should-do: 
+
+- A wishlist of takeaways that people might like to try.
+
+Won't do: 
+
+- A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
+- Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
 
 ## Project Boards
 Github Project Board
