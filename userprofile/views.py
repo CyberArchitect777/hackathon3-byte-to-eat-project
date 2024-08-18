@@ -1,5 +1,5 @@
-from django.shortcuts import render
 from django.contrib.auth.decorators import login_required # Ensures only logged in users will see this page
+from django.shortcuts import render, redirect
 from index.models import Review
 from index.forms import ReviewForm
 
