@@ -181,7 +181,7 @@ Testing was done both manually and using Validators (see next section).
 
 ## HTML
 Tested the HTML using W3 Validator using the URL checker function. https://validator.w3.org/
-
+No issues - ![image](https://github.com/user-attachments/assets/a5bce627-5103-4a8d-b5bf-19001b6b2a57)
 
 ## CSS
 CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-validator/ and posted no issues. 
