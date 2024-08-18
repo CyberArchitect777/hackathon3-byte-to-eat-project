@@ -9,8 +9,6 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-12 mb-4">
                 <div class="card">
-                    <img src="https://res.cloudinary.com/dzkbptwr7/image/upload/v1723975477/burgerfries_d9ysx2.jpg"
-                        alt="takeaway food" class="aboutimage">
                     <div class="card-body">
                         <h5 class="card-title">{{ about.title }}</h5>
                     </div>
@@ -29,7 +27,7 @@
 <div class="container-fluid my-5" id="snackprofile">
     <div class="row justify-content-center">
         <!-- Code to be iterated to create numerous cards from database -->
-        {% for profile in profile_list %}
+        {% for profile in snack_profile_list %}
         <div class="col-md-4 col-12 mb-4 link_highlight">
             <div class="card border-warning">
                 {% if "placeholder" in snack_profile.image.url %}
