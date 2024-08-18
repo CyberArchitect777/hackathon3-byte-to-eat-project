@@ -145,7 +145,7 @@ In the deploy tab, scroll down and deploy MAIN Branch \
 * Gitpod - Code Editor
 * Django - Python Framework
 * BootStrap - CSS Framework
-* Google Fonts - Oswald Font https://fonts.google.com/specimen/Oswald
+* Google Fonts - Open Sans Font https://fonts.google.com
 * Miro - Project Ideas Board & ERD Creation https://miro.com/
 * Coolors.co - Colour pallette/tone helper https://coolors.co/
 * Google Docs - Sharing and hosting files
