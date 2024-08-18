@@ -185,6 +185,8 @@ No issues - ![image](https://github.com/user-attachments/assets/a5bce627-5103-4a
 
 ## CSS
 CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-validator/ and posted no issues. 
+![image](https://github.com/user-attachments/assets/4353bcf2-ec95-466d-a20e-ab277c556564)
+
 
 ## Javascript
 Javascript was testing using JS Hint: https://jshint.com/
