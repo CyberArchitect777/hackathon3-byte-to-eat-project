@@ -143,6 +143,12 @@ footer i {
     text-align: center;
 }
 
+/* Reviews page */
+
+.set-vertical-align {
+    vertical-align: middle;
+}
+
 
 /* Media queries */
 

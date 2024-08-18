@@ -69,9 +69,9 @@
                 <td>{{ review.rating|star_rating|safe }}</td>
                 <td>{{ review.review_title }}</td>
                 <td>{{ review.review_content }}</td>
-                <td>
-                    <a href="{% url 'edit_review' review.pk %}" class="btn btn-primary btn-sm">Edit</a>
-                    <a href="{% url 'delete_review' review.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                <td class="set-vertical-align">
+                    <a href="{% url 'edit_review' review.pk %}" class="btn btn-primary btn-sm d-flex justify-content-center">Edit</a>
+                    <a href="{% url 'delete_review' review.pk %}" class="btn btn-danger btn-sm d-flex justify-content-center">Delete</a>
                 </td>
             </tr>
             {% endfor %}
