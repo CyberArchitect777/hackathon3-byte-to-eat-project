@@ -3,7 +3,8 @@
 
 
 ## Contents
-- [By Team](by-team)
+- [Introduction](#introduction)
+- [By Team](#by-team)
 - [About](#about)
 - [Agile](#Agile) 
 - [Project Boards](#Project-Boards)
@@ -19,16 +20,19 @@
 - [Content Credit](#Content-Credit)
 - [Further Thoughts](#Further-Thoughts)
 
+# Introduction
 
-## By Team
+Welcome to Byte 2 Eat, a website designed to allow private users to review takeaways without having to make any public declaration. This offers a chance for highly personal reviews to be left of any standard without concerns for how it may look, legal consequences or controversy.
+
+This website was created during Hackathon 3 of the "16-Week High-Performance Full Stack Skills Bootcamp" which ranged from 15/08/2024 (from 9am) to 19/08/2024 (up to 1.30pm) covering a weekend period. There were no planning or preparation conducted before the start day.
+
+The goal of this Hackathon was to demonstrate the construction of a full-stack web development project using HTML, CSS, JavaScript, Python and Django in a team environment. 
+
+## The Team
 
 Barrie, Christina, Aeryx, Samuel, Jamie, Leander
 
 Together we are Snack Overflow! 
-
-## About
-
-Designing a personalised website where users can rate local takeaways, add personal notes " I like the Korma here, but my partner doesn't like the Garlic Chilli Chicken". The option to add more restaurants and to do lists suchs as restaurants to try via check list. 
 
 ## Agile
 An agile methodology was deployed for this project, adhering to MoSCoW principles. 
