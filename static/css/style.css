@@ -27,6 +27,12 @@ header .nav-link, header .nav-brand {
     color: white;
 }
 
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff; 
+}
+
+
 /* align collapsed menu text right */
 @media (max-width: 991.98px) { /* Adjust breakpoint as needed */
     .navbar-collapse {
@@ -109,11 +115,8 @@ footer i {
 }
 
 
-.djangomessage {
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    background-color: rgba(240, 240, 240, 0.5);
+.loginmessage {
+    text-align: right;
 }
 
 /* Dropdown Arrow */

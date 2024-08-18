@@ -7,15 +7,13 @@
 {% block content %}
 <!-- Start a block if you intend to override it in child templates -->
 
-{% if user.is_authenticated %}
 
-{% else %}
-<!-- If user is NOT logged in display sign in details -->
+
 <div class="container welcome signing">
   <div class="row mt-5">
     <div class="d-flex justify-content-center">
-      <img id="company-logo" class="img-fluid" src="https://res.cloudinary.com/dp1ehadna/image/upload/v1723817030/szqoxcu6niwd58uzfcuh.png"
-        alt="Company Logo">
+      <img id="company-logo" class="img-fluid"
+        src="https://res.cloudinary.com/dp1ehadna/image/upload/v1723817030/szqoxcu6niwd58uzfcuh.png" alt="Company Logo">
     </div>
     <h1 class="index-box my-auto py-5 mt-5"><strong>A private takeaway review website where your words are
         only for you!</strong></h1>
@@ -27,6 +25,10 @@
       Be as specific, vague or expressive as you want about the food you've eaten.
       Build a profile of what you like to buy and how you like to mix them to enjoy your perfect meals
     </p>
+    <!-- If user is NOT logged in display sign in details -->
+    {% if user.is_authenticated %}
+
+    {% else %}
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
         <form class="login mb-4" method="POST" action="{% url 'account_login' %}">
