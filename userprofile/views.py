@@ -24,10 +24,9 @@ def review_dashboard(request):
     return render(
         request, 
         "userprofile/review_dashboard.html", {
-        "user_reviews": user_reviews
+        "user_reviews": user_reviews,
         }
     )
-
 
 # Add a review
 def add_review(request, review_id=None):
@@ -46,7 +45,7 @@ def add_review(request, review_id=None):
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid(): # Checks if form's validation rules are met
             review = form.save(commit=False) # Doesn't commit form to the database yet
-            review.user = request.user # Assigns the logged-in user to the review
+            review.poster = request.user # Assigns the logged-in user to the review
             review.save() # Now saves form to the database
             messages.add_message(request, messages.SUCCESS, "Review successfully added.")
             return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
