@@ -20,6 +20,7 @@ from index import views as index_views
 from userprofile import views as profile_views
 
 urlpatterns = [
+    path('about/', include('about.urls')),
     path("admin/", admin.site.urls),
     path("summernote/", include("django_summernote.urls")),
     path("accounts/", include("allauth.urls")),

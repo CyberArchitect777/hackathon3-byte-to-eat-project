@@ -48,8 +48,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="{% url 'about' %}">About</a>
                         {% if user.is_authenticated %}
-
                     <!-- "My Reviews" tab will appear on the Navbar when user is logged in -->
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/review-dashboard/' %}{% endif %}" aria-current="page"
