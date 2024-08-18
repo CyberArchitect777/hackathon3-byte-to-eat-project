@@ -70,9 +70,8 @@
                 <td>{{ review.review_title }}</td>
                 <td>{{ review.review_content }}</td>
                 <td>
-                    <!-- {% comment %} Buttons that give the user the option to edit or delete their review 
-                    <a href="{% url 'edit_review' review.pk %}" class="btn btn-primary btn-sm">Edit</a> This url will need updating
-                    <a href="{% url 'delete_review' review.pk %}" class="btn btn-danger btn-sm">Delete</a> This url will need updating {% endcomment %} -->
+                    <a href="{% url 'edit_review' review.pk %}" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="{% url 'delete_review' review.pk %}" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
             {% endfor %}
