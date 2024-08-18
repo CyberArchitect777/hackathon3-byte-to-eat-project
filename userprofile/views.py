@@ -1,7 +1,9 @@
 from django.contrib.auth.decorators import login_required # Ensures only logged in users will see this page
-from django.shortcuts import render, redirect
-from index.models import Review
-from index.forms import ReviewForm
+from django.shortcuts import render, redirect # function is a shortcut for rendering a template and returning an HTTP response
+from django.contrib import messages # Django's built-in messaging system/feedback to user
+from django.urls import reverse_lazy # Handles URL redirection
+from index.models import Review # Import Review model
+from index.forms import ReviewForm # Import Review form
 
 # Create your views here.
 
