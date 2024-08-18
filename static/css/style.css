@@ -108,6 +108,13 @@ footer i {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
+/* About Page */
+
+#aboutbyte {
+    text-align: center;
+}
+
+
 /* Media queries */
 
 @media only screen and (min-width: 720px) {
