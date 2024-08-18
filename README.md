@@ -83,6 +83,11 @@ Purple: #5058A8 \
 Fork grey: #BCBEC0 \
 Circle grey: #F0F2F1 
 
+We also used the Miro board for inspiration and ideas.
+
+![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
+
+
 ## Wireframes 
 Website Wireframes were created in Balsalmiq.
 Main Page \
@@ -145,7 +150,7 @@ In the deploy tab, scroll down and deploy MAIN Branch \
 * Gitpod - Code Editor
 * Django - Python Framework
 * BootStrap - CSS Framework
-* Google Fonts - Oswald Font https://fonts.google.com/specimen/Oswald
+* Google Fonts - Open Sans Font https://fonts.google.com
 * Miro - Project Ideas Board & ERD Creation https://miro.com/
 * Coolors.co - Colour pallette/tone helper https://coolors.co/
 * Google Docs - Sharing and hosting files
@@ -181,10 +186,12 @@ Testing was done both manually and using Validators (see next section).
 
 ## HTML
 Tested the HTML using W3 Validator using the URL checker function. https://validator.w3.org/
-
+No issues - ![image](https://github.com/user-attachments/assets/a5bce627-5103-4a8d-b5bf-19001b6b2a57)
 
 ## CSS
 CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-validator/ and posted no issues. 
+![image](https://github.com/user-attachments/assets/4353bcf2-ec95-466d-a20e-ab277c556564)
+
 
 ## Javascript
 Javascript was testing using JS Hint: https://jshint.com/
