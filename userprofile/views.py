@@ -9,20 +9,19 @@ from django.views.generic import TemplateView # star ratings instead of numbers
 
 # Create your views here.
 
-# User profile - sorry, this is the same as the "Add a Review" def down below. I'm not sure which is correct - Tina
-#@login_required 
-#def add_review(request):
-   # return render(
-       # request, 
-        #"userprofile/review_dashboard.html"
-    #)
 
 # User dashboard that shows all their reviews
 @login_required 
 def review_dashboard(request):
 
-    user_reviews = Review.objects.filter(poster=request.user)
+    sort_by = request.GET.get("sort_by", "created_on") # Default sort by date review is created on
+    sort_order = request.GET.get("sort_order", "asc") # Default sort order is ascending
+    
+    if sort_order == "desc": # If sort order is descending
+            sort_by = f'-{sort_by}'
 
+    user_reviews = Review.objects.filter(poster=request.user).order_by(sort_by) # Filters reviews so current user can only see their own
+        
     return render(
         request, 
         "userprofile/review_dashboard.html", {

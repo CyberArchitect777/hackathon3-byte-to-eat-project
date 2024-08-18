@@ -32,6 +32,10 @@ header .nav-link, header .nav-brand {
     border-color: #fff; 
 }
 
+.navbar-toggler-icon {
+    /* Provides an icon for the navbar on mobile view */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 /* align collapsed menu text right */
 @media (max-width: 991.98px) { /* Adjust breakpoint as needed */
@@ -97,7 +101,7 @@ footer i {
 .signingbutton {
     background-color: #F4C542; 
     color: black;
-    width: 150px;
+    width: 260px;
     height: 50px; 
     border: 2px solid black; 
     border-radius: 5px; 
@@ -137,6 +141,12 @@ footer i {
 
 #aboutbyte {
     text-align: center;
+}
+
+/* Reviews page */
+
+.set-vertical-align {
+    vertical-align: middle;
 }
 
 
