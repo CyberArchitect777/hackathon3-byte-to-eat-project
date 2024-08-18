@@ -116,6 +116,20 @@ footer i {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
+/* Dropdown Arrow */
+.dropdown-arrow {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    padding-right: 24px;
+    /* Space for arrow */
+    font-size: 16px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"><path fill="none" stroke="%23333" stroke-width="2" d="M1 1l5 5 5-5"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px 10px;
+}
+
 /* About Page */
 
 #aboutbyte {

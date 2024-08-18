@@ -2,7 +2,7 @@
 
 
 {% extends "base.html" %}
-
+{% load custom_filters %}
 {% block content %}
 
 <!-- Allows User to sort through all their Takeaway ratings -->
@@ -14,7 +14,7 @@
         <div class="col">
 
             <!-- Options user can sort by -->
-            <select name="sort_by" class="form-control">
+            <select name="sort_by" class="form-control dropdown-arrow ">
                 <option value="takeaway_name" {% if request.GET.sort_by == "takeaway_name" %}selected{% endif %}>
                     Takeaway Name</option>
                 <option value="food_type" {% if request.GET.sort_by == "food_type" %}selected{% endif %}>food_type
@@ -28,7 +28,7 @@
 
         <!-- Option to sort list by ascending or descending -->
         <div class="col">
-            <select name="sort_order" class="form-control">
+            <select name="sort_order" class="form-control dropdown-arrow ">
                 <option value="asc" {% if request.GET.sort_order == 'asc' %}selected{% endif %}>Ascending</option>
                 <option value="desc" {% if request.GET.sort_order == 'desc' %}selected{% endif %}>Descending</option>
             </select>
@@ -66,7 +66,7 @@
                 <td>{{ review.created_on }}</td>
                 <td>{{ review.takeaway_name }}</td>
                 <td>{{ review.food_type }}</td>
-                <td>{{ review.rating }}</td>
+                <td>{{ review.rating|star_rating|safe }}</td>
                 <td>{{ review.review_title }}</td>
                 <td>{{ review.review_content }}</td>
                 <td>

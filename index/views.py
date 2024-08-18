@@ -8,7 +8,7 @@ from .models import Review
 from .forms import ReviewForm
 from django.contrib import messages
 from django.db.models import Avg
-
+from django.views.generic import TemplateView # star ratings instead of numbers
 
 # Create your views here.
 

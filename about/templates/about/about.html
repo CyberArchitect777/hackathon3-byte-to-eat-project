@@ -2,26 +2,53 @@
 {% load static %}
 <!-- Content from Base.HTML after this block-->
 
-<!-- About Byte inside Accordion --> 
-<div class="container" id="#aboutbyte">
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="https://res.cloudinary.com/dzkbptwr7/image/upload/v1723975477/burgerfries_d9ysx2.jpg"
-                    alt="takeaway food" class="aboutimage">
-                <div class="card-body">
-                    <h5 class="card-title">{{ about.title }}</h5>
+<!-- About Byte2Eat -->
+
+<div class="container-fluid mt-5">
+    <div class="container" id="#aboutbyte">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ about.title }}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{ about.about_byte2eat | safe }}</li>
+                        <li class="list-group-item">{{ about.about_snackoverflow | safe }}</li>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">{{ about.about_byte2eat | safe }}</li>
-                    <li class="list-group-item">{{ about.about_snackoverflow | safe }}</li>
-                </ul>
             </div>
         </div>
     </div>
 </div>
 
-<!-- About US coders inside Accordion -->
- 
+
+<!-- About US  -->
+<div class="container-fluid my-5" id="snackprofile">
+    <div class="row justify-content-center">
+        <!-- Code to be iterated to create numerous cards from database -->
+        {% for profile in snack_profile_list %}
+        <div class="col-md-4 col-12 mb-4 link_highlight">
+            <div class="card border-warning">
+                {% if "placeholder" in snack_profile.image.url %}
+                <img src="{% static '/images/byte2eatlogo.png' %}" class="card-img-top" alt="(placeholder image)">
+                {% else %}
+                <img src="{{ snack_profile.image }}" class="card-img-top" alt="Profile Image">
+                <div class="card-body">
+                    {% endif %}
+                    <h5 class="card-title">{{ snack_profile.profile_name }}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>About: </strong>{{
+                        snack_profile.about_profile }}</li>
+                    <li class="list-group-item"><strong>Fun Fact: </strong>{{ snack_profile.funfact
+                        }}</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of iterated code-->
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock content %}
