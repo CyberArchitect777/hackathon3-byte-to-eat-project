@@ -29,6 +29,9 @@
   <!-- If user is NOT logged in display sign in details -->
   {% if user.is_authenticated %}
 </div>
+<div class="text-center">
+  <a href="{% url 'review_dashboard' %}" class="btn signingbutton">Take me to my Dashboard</a> 
+</div>
 {% else %}
 <div class="row">
   <div class="col-md-8 mt-3 offset-md-2">
