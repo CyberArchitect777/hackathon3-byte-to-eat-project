@@ -37,7 +37,7 @@
 <body>
     <!-- NavBar -->
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'index' %}"><img
                         src="https://res.cloudinary.com/dp1ehadna/image/upload/v1723817030/szqoxcu6niwd58uzfcuh.png"
@@ -49,10 +49,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item my-auto me-5git">
+                            <div class="row d-none d-md-block">
+                                {% if user.is_authenticated %}
+                                <p>You are logged in as {{ user }}</p>
+                                {% else %}
+                                <p class="my-auto mx-2">You are not logged in</p>
+                            {% endif %}
+                            </div>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>
-                            {% if user.is_authenticated %}
+                            <a class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>                            
                             <!-- "My Reviews" tab will appear on the Navbar when user is logged in -->
+                        </li>
+                        {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/review-dashboard/' %}{% endif %}"
                                 aria-current="page" href="{% url 'review_dashboard' %}">My Reviews</a>
@@ -74,15 +84,15 @@
                         {% endif %}
                     </ul>
                 </div>
-                <div class="row">
-                    {% if user.is_authenticated %}
-                    <p class="text-end m-3">You are logged in as {{ user }}</p>
-                    {% else %}
-                    <p class="text-end m-3">You are not logged in</p>
-                    {% endif %}
-                </div>
             </div>
         </nav>
+        <div class="row d-md-none">
+            {% if user.is_authenticated %}
+            <p class="text-center">You are logged in as {{ user }}</p>
+            {% else %}
+            <p class="text-center">You are not logged in</p>
+            {% endif %}
+        </div>
     </header>
     <main class="container-fluid">
         {% block content %}
