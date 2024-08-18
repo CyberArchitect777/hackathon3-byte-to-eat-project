@@ -5,7 +5,7 @@
 1. [Introduction](#introduction)
 2. [The Team](#the-team)
 3. [Planning](#planning)
-4. [Design]{#design}
+4. [Design](#design)
 5. [Repository, Project Board and Deployment](#project-base)
 6. [Wireframes](#Wireframes)
 7. [Features](#Features)
