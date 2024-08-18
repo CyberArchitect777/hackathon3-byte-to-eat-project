@@ -27,6 +27,14 @@ header .nav-link, header .nav-brand {
     color: white;
 }
 
+/* align collapsed menu text right */
+@media (max-width: 991.98px) { /* Adjust breakpoint as needed */
+    .navbar-collapse {
+      text-align: right;
+    }
+  }
+
+
 header img {
     width: 150px;
 }
@@ -107,6 +115,13 @@ footer i {
     text-align: center;
     background-color: rgba(240, 240, 240, 0.5);
 }
+
+/* About Page */
+
+#aboutbyte {
+    text-align: center;
+}
+
 
 /* Media queries */
 

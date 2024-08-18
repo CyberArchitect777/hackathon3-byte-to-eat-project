@@ -1,62 +1,80 @@
  # Byte 2 Eat
 ![image](https://github.com/user-attachments/assets/a7fc73bf-10f8-4ffa-af78-daa3be85604e)
 
-
 ## Contents
-- [By Team](by-team)
-- [About](#about)
-- [Agile](#Agile) 
-- [Project Boards](#Project-Boards)
-- [Live Deployment](#Live-Deployment)
-- [Design](#Design)
-- [Wireframes](#Wireframes)
-- [Features](#Features)
-- [Technology](#Technology)
-- [Future Features](#Future-Features)
-- [Testing](#Testing)
-- [Validator Testing](#Validator-Testing)
-- [Credits](#Credits)
-- [Content Credit](#Content-Credit)
-- [Further Thoughts](#Further-Thoughts)
+1. [Introduction](#introduction)
+2. [The Team](#the-team)
+3. [Planning](#planning)
+4. [Design]{#design}
+5. [Repository, Project Board and Deployment](#project-base)
+6. [Wireframes](#Wireframes)
+7. [Features](#Features)
+8. [Technology](#Technology)
+9. [Future Features](#Future-Features)
+10. [Testing](#Testing)
+11. [Validator Testing](#Validator-Testing)
+12. [Credits](#Credits)
+13. [Content Credit](#Content-Credit)
+14. [Further Thoughts](#Further-Thoughts)
 
+# Introduction
 
-## By Team
+Welcome to Byte 2 Eat, a website designed to allow private users to review takeaways without having to make any public declaration. This offers a chance for highly personal reviews to be left of any standard without concerns for how it may look, legal consequences or controversy.
 
-Barrie, Christina, Aeryx, Samuel, Jamie, Leander
+This website was created during Hackathon 3 of the "16-Week High-Performance Full Stack Skills Bootcamp" which ranged from 15/08/2024 (from 9am) to 19/08/2024 (up to 1.30pm) covering a weekend period. There were no planning or preparation conducted before the start day.
 
-Together we are Snack Overflow! 
+The goal of this Hackathon was to demonstrate the construction of a full-stack web development project using HTML, CSS, JavaScript, Python and Django in a team environment. 
 
-## About
+<a id="the-team"></a>
+## The Team
 
-Designing a personalised website where users can rate local takeaways, add personal notes " I like the Korma here, but my partner doesn't like the Garlic Chilli Chicken". The option to add more restaurants and to do lists suchs as restaurants to try via check list. 
+Together, we are Snack Overflow!
 
-## Agile
-An agile methodology was deployed for this project, adhering to MoSCoW principles. 
+In alphabetical (by surname) order, here are the members of the team:-
 
-### Must Haves 
-Login Page
-User Area
-Ability to add takeaways.
-Leave a comment/review
+The full-time developers: 
 
-### Should haves
-Add new takeaways to try to a checklist
+* Christina Hughes - (https://github.com/CHughes13)
+* Barrie Millar - (https://github.com/CyberArchitect777)
+* Samuel Parker - (https://github.com/SamuelParkerTech)
 
-### Could have
-A public facing area showing all reviewed takeaways. 
+Additional development only (due to other course / personal committments):
 
-### Won't Have
-Email / reset password login
+* Leander Otis - (https://github.com/LO-CI24)
+* Jamie Pudsey - (https://github.com/JPudsey-11)
+* Aeryx Rose - (https://github.com/SubjugatorofCSS)
 
-## Project Boards
-Github Project Board
-https://github.com/users/CyberArchitect777/projects/11 \
+<a id="planning"></a>
+## Planning Methodology 
+
+Using Agile ideals, the project was designed with the principle of minimum viable product in mind. Therefore, it was decided that a very simple product would be constructed before any additional features were added. It was determined early on that the following features would be applicable to our project. 
+
+Must-do:
+
+- A login and registration system for our users to sign in to their private review areas
+- A review screen where comments could be added, edited or deleted.
+- Additional pages for form additions to achieve this as needed.
+- A site that was effortless to use in order to allow users to quickly check in and out to submit their own ideas.
+
+Should-do: 
+
+- A wishlist of takeaways that people might like to try.
+
+Won't do: 
+
+- A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
+- Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
+
+## Repository, Project Board and Deployment
+
+Our project details can be found in the following places. 
+
+Project Board - (https://github.com/users/CyberArchitect777/projects/11)
+GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
+Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
+
 Miro Board
 https://miro.com/app/board/uXjVKpKknpw=/
-
-## Live Deployment
-
-Live deployment via Heroku: https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com/
 
 ## Design
 
