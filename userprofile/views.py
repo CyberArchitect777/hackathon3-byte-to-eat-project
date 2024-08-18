@@ -13,6 +13,7 @@ from index.forms import ReviewForm
         #"userprofile/review_dashboard.html"
     #)
 
+# User dashboard that shows all their reviews
 @login_required 
 def review_dashboard(request):
 
@@ -24,10 +25,6 @@ def review_dashboard(request):
         "user_reviews": user_reviews
         }
     )
-
-# User dashboard that shows all their reviews
-def review_dashboard(request):
-    return render(request, "userprofile/review_dashboard.html")
 
 
 # Add a review
