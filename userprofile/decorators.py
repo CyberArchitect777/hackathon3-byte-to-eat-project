@@ -1,6 +1,6 @@
 from django.core.exceptions import PermissionDenied # If a user tries to do something they don't have permission for = 403 Forbidden response
 from django.shortcuts import get_object_or_404
-from .models import Review
+from index.models import Review
 from functools import wraps
 
 def require_superuser(view_func): # Checks if user is superuser
