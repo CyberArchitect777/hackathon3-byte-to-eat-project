@@ -133,7 +133,7 @@ Once logged in via the register page or log in page, the following index page is
 When the user wants to sign out, they can do it here.
 
 ![alt text](docs/images/desktop-logout.png) 
-![alt text](docs/images/mobile.logout.png)
+![alt text](docs/images/mobile-logout.png)
 
 ![user-review-dashboard-with-reviews](https://github.com/user-attachments/assets/1ae89050-bc14-453a-b621-2348a0121e5f)
 
