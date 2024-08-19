@@ -183,6 +183,10 @@ footer i {
     padding-bottom: 20px;
 }
 
+.card {
+    display: block;
+}
+
 /* Reviews page */
 
 .set-vertical-align {
