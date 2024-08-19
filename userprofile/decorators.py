@@ -20,7 +20,7 @@ def require_review_ownership(view_func): # Checks if user that is trying to acce
         if request.user.is_superuser:
             return view_func(request, *args, **kwargs)
 
-        if review.user != request.user:
+        if review.poster != request.user:
             raise PermissionDenied("You do not have permission to edit or delete this review.")
 
         return view_func(request, *args, **kwargs)
