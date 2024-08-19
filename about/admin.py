@@ -10,6 +10,7 @@ class AboutAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('about_byte2eat, about_snackoverflow,')
 
+
 @admin.register(Snack_Profile)
 class Snack_ProfileAdmin(SummernoteModelAdmin):
 
