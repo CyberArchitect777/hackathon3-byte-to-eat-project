@@ -1,4 +1,3 @@
-
 /* Page styles */
 
 body {
@@ -11,25 +10,33 @@ main {
     background: white url("https://res.cloudinary.com/dp1ehadna/image/upload/v1723822653/heroimage_pdpk38.jpg") no-repeat center/cover fixed;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 /* Header styles */
 
-header, nav {
+header,
+nav {
     background-color: #5058A8;
     color: white;
 }
 
-header .nav-link, header .nav-brand {
+header .nav-link,
+header .nav-brand {
     color: white;
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:focus-visible {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:focus-visible {
     text-decoration: underline;
     color: white;
 }
 
 .navbar-toggler {
     color: #fff;
-    border-color: #fff; 
+    border-color: #fff;
 }
 
 .navbar-toggler-icon {
@@ -38,11 +45,13 @@ header .nav-link, header .nav-brand {
 }
 
 /* align collapsed menu text right */
-@media (max-width: 991.98px) { /* Adjust breakpoint as needed */
+@media (max-width: 991.98px) {
+
+    /* Adjust breakpoint as needed */
     .navbar-collapse {
-      text-align: right;
+        text-align: right;
     }
-  }
+}
 
 
 header img {
@@ -73,19 +82,34 @@ footer i {
 
 /* Register page */
 
-.login li, #signup_form li {
+.login li,
+#signup_form li {
     list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#signup_form label {
+    width: 150px;
 }
 
 /* This is to help the text on the page stand out from the background image */
 .text-overlay {
-    background: rgba(255, 255, 255, 0.97); /* White with 50% transparency */
-    padding: 10px 0px; /* Adjust padding as needed */
-    display: inline-block; /* Ensures effect only takes up the width of the text */
-    border-radius: 5px; /* Adds rounded corners */
+    background: rgba(255, 255, 255, 0.97);
+    /* White with 50% transparency */
+    padding: 10px 0px;
+    /* Adjust padding as needed */
+    display: inline-block;
+    /* Ensures effect only takes up the width of the text */
+    border-radius: 5px;
+    /* Adds rounded corners */
 }
 
 /* Sign in and Log Out pages */
+
+.login label {
+    width: 125px;
+}
 
 .welcome {
     text-align: center;
@@ -96,26 +120,27 @@ footer i {
     color: black;
     font-weight: 600;
     text-align: center;
+    background-color: white;
 }
 
 .signingbutton {
-    background-color: #F4C542; 
+    background-color: #F4C542;
     color: black;
     width: 260px;
-    height: 50px; 
-    border: 2px solid black; 
-    border-radius: 5px; 
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
     font-size: 16px;
-    font-weight: bold; 
+    font-weight: bold;
     text-align: center;
     display: inline-block;
     text-decoration: none;
 }
 
 .signingbutton:hover {
-    background-color: #F4C542; 
-    color: black; 
-    border-color: black; 
+    background-color: #F4C542;
+    color: black;
+    border-color: black;
 }
 
 
@@ -143,14 +168,27 @@ footer i {
     text-align: center;
 }
 
-/* Reviews page */
+/* Reviews page - default style */
 
 .set-vertical-align {
     vertical-align: middle;
 }
 
+#table-element {
+    /* Hides table by default */
+    display: none;
+}
+
+#review-area .card {
+    /* Shows cards by default */
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 270px;
+}
 
 /* Media queries */
+/* Styles for screens 720px wide */
 
 @media only screen and (min-width: 720px) {
 
@@ -159,5 +197,30 @@ footer i {
     #company-logo {
         max-width: 600px;
     }
+}
 
+/* Review page */
+#table-element {
+    display: none;
+    /* Hides table on smaller screens */
+}
+
+.card {
+    display: block;
+    /* Shows cards on smaller screens */
+}
+
+/* Styles for screens 992px wide and larger */
+@media only screen and (min-width: 992px) {
+    /* Review page */
+
+    #table-element {
+        display: table;
+        /* Shows the table on larger screens */
+    }
+
+    #review-area .card {
+        display: none;
+        /* Hides the cards on larger screens */
+    }
 }
