@@ -84,5 +84,7 @@ def edit_review(request, pk):
 @require_review_ownership
 def delete_review(request, pk):
     review = Review.objects.get(pk=pk)
-    review.delete()
-    return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
+    if request.method == "POST":
+        review.delete()
+        return redirect("review_dashboard") # Redirects User to dashboard with all their reviews
+    return render(request, "delete_reivew.html", {"object": review})
