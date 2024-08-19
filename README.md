@@ -75,17 +75,23 @@ A Google document was set up to share and discuss ideas (https://docs.google.com
 Our project details can be found in the following places. 
 
 Project Board - (https://github.com/users/CyberArchitect777/projects/11)
+
 GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
+
 Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
 
 ## Design
 
-Purple: #5058A8 \
-Fork grey: #BCBEC0 \
-Circle grey: #F0F2F1 
+### Colour scheme
 
-## Wireframes 
-Website Wireframes were created in Balsalmiq. \
+Site: Purple: (#5058A8) \ White (#FFFFFF)
+
+Logo: Purple (#5058A8) \ Fork grey (#BCBEC0) \ Circle grey (#F0F2F1)
+
+### Wireframes
+
+To design the project, we used Balsalmiq to create a number of wireframes. Our design concepts are shown below:-
+
 Main Page \
 ![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
 
@@ -98,52 +104,99 @@ Register Food / Review \
 
 ## Features
 
-The main features are a login page, a user dashboard with the ability to post new reviews of takeaways and view those takeaways. 
+The main features of the site are a login management system, a user dashboard to view, create, edit and delete takeaway reviews and an about page. The screenshots below show the site as seen on desktop and mobile.
 
-### Main Page (Not logged in)
-![image](https://github.com/user-attachments/assets/4efc420f-3485-4d9a-b725-bdc8ec6deb63)
+Once entering the website, the user is greeted with the following page on desktop and on mobile. Note the different ways that the logged in status is shown on desktop and mobile to provide clarity to users on both platforms.
 
-### Sign in Page
-![image](https://github.com/user-attachments/assets/1e7c2cb1-1c4c-4fb9-9720-3b56daefff14)
+![Desktop image of the index page when logged out](docs/images/desktop-index-loggedout.png)
+![Mobile image of the index page when logged out](docs/images/mobile-index-loggedout.png) 
 
-### Main Page (logged in)
-![image](https://github.com/user-attachments/assets/add01b10-2872-4b2e-94c4-72f8f26e8fa7)
-We are likely to add more functionality to this page, or have it redirect to the user dashboard. 
+From here, you can register for the site as shown below.
 
-### Updated version of the main page 
+![alt text](docs/images/desktop-register.png)
+![alt text](docs/images/mobile-signup.png)
 
-![image](https://github.com/user-attachments/assets/0c75b65c-7a6f-454a-b7a2-b36e95969c65)
+If you are already signed up, you can log in from this page instead.
 
+![alt text](docs/images/desktop-login.png) 
+![alt text](docs/images/mobile-login.png) 
 
-### 'My Reviews' / User Dashboard
-![image](https://github.com/user-attachments/assets/1abb16c8-ee12-4a8a-ae63-a1eda4a8e653)
+Once logged in via the register page or log in page, the following index page is shown.
 
-### Add Review Page
-![image](https://github.com/user-attachments/assets/7e90d289-449a-4e41-8020-24a507842543)
+![alt text](docs/images/desktop-index-loggedin.png)
+![alt text](docs/images/mobile-index-loggedin.png) 
 
-### Edit/Delete a Review Page
-![image](https://github.com/user-attachments/assets/3ace9008-d151-400b-98ba-c4eeee62b422)
+When the user wants to sign out, they can do it here.
 
-### About Page
-![image](https://github.com/user-attachments/assets/389e8acf-1487-41e4-a514-69b01fb7891c)
-
-### Logout Page
-![image](https://github.com/user-attachments/assets/9c455384-7546-400a-8eee-a0c04c9b61fa)
+![alt text](docs/images/desktop-logout.png) 
+![alt text](docs/images/mobile.logout.png)
 
 ## Deployment Via Heroku
 
-First make sure the Debug is set to false \
-In our project Debug was set via env.py so was active locally but disabled on Heroku automatically. \
-![image](https://github.com/user-attachments/assets/e367bb35-3372-4c39-8672-5544cad9e9d8)
+Byte 2 Eat was deployed to Heroku as a project early on in the development. The following information is what was used to achieve this. 
 
-Connect your Github to your Heroku \
-![image](https://github.com/user-attachments/assets/d8a7aed2-8c8e-4df5-92ce-286396be909f)
+Setting up a fresh project
 
-Make sure VARS are set correctly. \
-![image](https://github.com/user-attachments/assets/cd552e8e-2fc9-4929-8f65-912860ec5c69)
+- pip3 install django
+- django-admin startproject bytetoeat .
+- python3 manage.py startapp index
+- python3 manage.py runserver
+- Make sure the local environment is added to ALLOWED_HOST in settings.py
+- Check the project works
 
-In the deploy tab, scroll down and deploy MAIN Branch \
-![image](https://github.com/user-attachments/assets/20234481-4a8a-44b7-9070-69b5bb1dd0c4)
+Setting up the index page
+
+- Add to the urls.py codebase in the project directory before doing the same with views.py
+- A basic message should be displayed on your local environment.
+
+Deploy to Heroku
+
+- Create a new project on Heroku. After that, go to the settings tab and reveal config vars. Add a key of DISABLE_COLLECTSTATIC and a value of 1 before clicking Add.
+
+In GitPod
+
+- pip3 install gunicorn
+- pip3 freeze --local > requirements.txt
+- echo "web: gunicorn bytetoeat.wsgi" > Procfile
+- Set DEBUG to False in settings.py and also add ’.herokuapp.com’ to ALLOWED_HOSTS
+- Commit and push to GitHub
+
+In Heroku
+- Go to the Deploy tab for this created project.
+- In the deployment method, select GitHub
+- Find the bytetoeat repository and select it.
+- Deploy branch to start a manual deployment of the main branch.
+- Click on open app to view the deployed project.
+- Open resources and choose an eco dyno, a lightweight container.
+- Verify that there is no existing Postgres database add-on. If there is one, you can destroy it, otherwise the costs can be significant.
+
+Local environment
+
+- Set DEBUG to True
+- env.py: Fill out the file to set an environment variable called DATABASE_URL to the database that is being used. 
+- Add env.py to .gitignore
+- pip3 install dj-database-url psycopg2
+- pip3 freeze --local > requirements.txt
+- Import the following code into bytetoeat/settings.py: 
+
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+	import env
+
+- Set up the database link in settings.py to read from env.py locally or from the DATABASE_URL environment variable on Heroku
+- Run python3 manage.py migrate
+- python3 manage.py createsuperuser # Choose a username, email and password for super user access to Django
+- Git commit and push again and re-deploy the project on Heroku
+
+Heroku
+
+- Finally make sure again that there are no database addons on Heroku and that the DATABASE_URL has been set correctly.
+
+Final steps
+
+- DEBUG should be off on deployment, or a method found to automatically switch it off as it has been done in this project.
+- No secret information nominally found in env.py or environment variables should be exposed onto public respositories or websites.
 
 ## Technology
 
