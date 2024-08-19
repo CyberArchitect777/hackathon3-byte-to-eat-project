@@ -252,12 +252,11 @@ Javascript was testing using JS Hint: https://jshint.com/
 
 ## Python PEP 8 CI Checker - https://pep8ci.herokuapp.com/
 
-### User Profile Pages
-urls.py \
-![image](https://github.com/user-attachments/assets/5eef4c00-f015-44b8-b6da-4d51daba7ea4)
-views.py \
-![image](https://github.com/user-attachments/assets/ccf7eb2f-52dd-4f48-b7a6-d0ede8c32b4c)
+### User Profile Pages - checked and clear
 
+### Index - checked and clear
+
+### About - checked and clear
 
 ## Credits
 
