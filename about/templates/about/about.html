@@ -26,15 +26,22 @@
 <!-- About US  -->
 <div class="container-fluid my-5" id="snackprofile">
     <div class="row justify-content-center">
+        <h2>Meet the Team!</h2>
         <!-- Code to be iterated to create numerous cards from database -->
         {% for profile in profile_list %}
-        <div class="col-md-4 col-12 mb-4 link_highlight">
-            <div class="card border-warning">
-                {% if "placeholder" in profile.image.url %}
-                <img src="{% static '/images/byte2eatlogo.png' %}" class="card-img-top" alt="(placeholder image)">
-                {% else %}
-                <img src="{{ profile.image.url }}" class="card-img-top" alt="Profile Image">
-                {% endif %}
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 link_highlight">
+            <div class="card border-warning h-100">
+                <div class="image-container">
+                    {% if "placeholder" in profile.image.url %}
+                    <img src="{% static '/images/byte2eatlogo.png' %}" 
+                         class="card-img-top" 
+                         alt="(placeholder image)">
+                    {% else %}
+                    <img src="{{ profile.image.url }}" 
+                         class="card-img-top" 
+                         alt="Profile Image {{ profile.profile_name }}">
+                    {% endif %}
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ profile.profile_name | safe }}</h5>
                 </div>
@@ -48,5 +55,6 @@
         {% endfor %}
     </div>
 </div>
+
 
 {% endblock content %}
