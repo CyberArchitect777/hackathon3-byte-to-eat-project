@@ -20,7 +20,21 @@ from django.views.generic import TemplateView # star ratings instead of numbers
 @login_required 
 def review_dashboard(request):
 
+    allowed_sort_fields = [ "takeaway_name", "food_type", "rating", "created_on" ]
+    allowed_direction_field = "sort_order"
+    
     user_reviews = Review.objects.filter(poster=request.user)
+
+    if request.method == "GET":
+        selected_sort = request.GET.get("sort_by", "created_on")
+        selected_direction = request.GET.get("sort_order", "asc")
+        if selected_sort in allowed_sort_fields:
+            direction_symbol = ""
+            print("got into accepted fields")
+            if selected_direction == "desc":
+                print("desc noted")
+                direction_symbol = "-"
+            user_reviews = user_reviews.order_by(direction_symbol + selected_sort)
 
     return render(
         request, 

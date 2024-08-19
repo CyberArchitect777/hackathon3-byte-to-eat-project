@@ -66,6 +66,10 @@ Won't do:
 - A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
 - Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
 
+A Google document was set up to share and discuss ideas (https://docs.google.com/document/d/1tP5J2UAh9JbXni9sQfab1tEwxLOkr21A9vTms7MyAY4). A Miro Board (https://miro.com/app/board/uXjVKpKknpw=/) was also established for the same reason. A screenshot of this board can be seen below. 
+
+![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
+
 ## Repository, Project Board and Deployment
 
 Our project details can be found in the following places. 
@@ -74,19 +78,11 @@ Project Board - (https://github.com/users/CyberArchitect777/projects/11)
 GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
 Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
 
-Miro Board
-https://miro.com/app/board/uXjVKpKknpw=/
-
 ## Design
 
 Purple: #5058A8 \
 Fork grey: #BCBEC0 \
 Circle grey: #F0F2F1 
-
-We also used the Miro board for inspiration and ideas.
-
-![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
-
 
 ## Wireframes 
 Website Wireframes were created in Balsalmiq.
