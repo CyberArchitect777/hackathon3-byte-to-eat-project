@@ -108,9 +108,9 @@ The main features are a login page, a user dashboard with the ability to post ne
 
 ### Main Page (logged in)
 ![image](https://github.com/user-attachments/assets/add01b10-2872-4b2e-94c4-72f8f26e8fa7)
-We are likely to add more functionality to this page, or have it redirect to the user dashboard. \
+We are likely to add more functionality to this page, or have it redirect to the user dashboard. 
 
-Updated version of the main page \
+### Updated version of the main page 
 
 ![image](https://github.com/user-attachments/assets/0c75b65c-7a6f-454a-b7a2-b36e95969c65)
 
