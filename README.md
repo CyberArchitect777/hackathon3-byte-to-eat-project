@@ -85,7 +85,7 @@ Fork grey: #BCBEC0 \
 Circle grey: #F0F2F1 
 
 ## Wireframes 
-Website Wireframes were created in Balsalmiq.
+Website Wireframes were created in Balsalmiq. \
 Main Page \
 ![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
 
