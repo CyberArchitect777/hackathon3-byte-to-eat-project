@@ -75,17 +75,23 @@ A Google document was set up to share and discuss ideas (https://docs.google.com
 Our project details can be found in the following places. 
 
 Project Board - (https://github.com/users/CyberArchitect777/projects/11)
+
 GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
+
 Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
 
 ## Design
 
-Purple: #5058A8 \
-Fork grey: #BCBEC0 \
-Circle grey: #F0F2F1 
+### Colour scheme
 
-## Wireframes 
-Website Wireframes were created in Balsalmiq. \
+Site: Purple: (#5058A8) \ White (#FFFFFF)
+
+Logo: Purple (#5058A8) \ Fork grey (#BCBEC0) \ Circle grey (#F0F2F1)
+
+### Wireframes
+
+To design the project, we used Balsalmiq to create a number of wireframes. Our design concepts are shown below:-
+
 Main Page \
 ![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
 
@@ -98,37 +104,32 @@ Register Food / Review \
 
 ## Features
 
-The main features are a login page, a user dashboard with the ability to post new reviews of takeaways and view those takeaways. 
+The main features of the site are a login management system, a user dashboard to view, create, edit and delete takeaway reviews and an about page. The screenshots below show the site as seen on desktop and mobile.
 
-### Main Page (Not logged in)
-![image](https://github.com/user-attachments/assets/4efc420f-3485-4d9a-b725-bdc8ec6deb63)
+Once entering the website, the user is greeted with the following page on desktop and on mobile. Note the different ways that the logged in status is shown on desktop and mobile to provide clarity to users on both platforms.
 
-### Sign in Page
-![image](https://github.com/user-attachments/assets/1e7c2cb1-1c4c-4fb9-9720-3b56daefff14)
+![Desktop image of the index page when logged out](docs/images/desktop-index-loggedout.png)
+![Mobile image of the index page when logged out](docs/images/mobile-index-loggedout.png) 
 
-### Main Page (logged in)
-![image](https://github.com/user-attachments/assets/add01b10-2872-4b2e-94c4-72f8f26e8fa7)
-We are likely to add more functionality to this page, or have it redirect to the user dashboard. 
+From here, you can register for the site as shown below.
 
-### Updated version of the main page 
+![alt text](docs/images/desktop-register.png)
+![alt text](docs/images/mobile-signup.png)
 
-![image](https://github.com/user-attachments/assets/0c75b65c-7a6f-454a-b7a2-b36e95969c65)
+If you are already signed up, you can log in from this page instead.
 
+![alt text](docs/images/desktop-login.png) 
+![alt text](docs/images/mobile-login.png) 
 
-### 'My Reviews' / User Dashboard
-![image](https://github.com/user-attachments/assets/1abb16c8-ee12-4a8a-ae63-a1eda4a8e653)
+Once logged in via the register page or log in page, the following index page is shown.
 
-### Add Review Page
-![image](https://github.com/user-attachments/assets/7e90d289-449a-4e41-8020-24a507842543)
+![alt text](docs/images/desktop-index-loggedin.png)
+![alt text](docs/images/mobile-index-loggedin.png) 
 
-### Edit/Delete a Review Page
-![image](https://github.com/user-attachments/assets/3ace9008-d151-400b-98ba-c4eeee62b422)
+When the user wants to sign out, they can do it here.
 
-### About Page
-![image](https://github.com/user-attachments/assets/389e8acf-1487-41e4-a514-69b01fb7891c)
-
-### Logout Page
-![image](https://github.com/user-attachments/assets/9c455384-7546-400a-8eee-a0c04c9b61fa)
+![alt text](docs/images/desktop-logout.png) 
+![alt text](docs/images/mobile.logout.png)
 
 ## Deployment Via Heroku
 
