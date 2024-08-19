@@ -133,18 +133,70 @@ When the user wants to sign out, they can do it here.
 
 ## Deployment Via Heroku
 
-First make sure the Debug is set to false \
-In our project Debug was set via env.py so was active locally but disabled on Heroku automatically. \
-![image](https://github.com/user-attachments/assets/e367bb35-3372-4c39-8672-5544cad9e9d8)
+Byte 2 Eat was deployed to Heroku as a project early on in the development. The following information is what was used to achieve this. 
 
-Connect your Github to your Heroku \
-![image](https://github.com/user-attachments/assets/d8a7aed2-8c8e-4df5-92ce-286396be909f)
+Setting up a fresh project
 
-Make sure VARS are set correctly. \
-![image](https://github.com/user-attachments/assets/cd552e8e-2fc9-4929-8f65-912860ec5c69)
+- pip3 install django
+- django-admin startproject bytetoeat .
+- python3 manage.py startapp index
+- python3 manage.py runserver
+- Make sure the local environment is added to ALLOWED_HOST in settings.py
+- Check the project works
 
-In the deploy tab, scroll down and deploy MAIN Branch \
-![image](https://github.com/user-attachments/assets/20234481-4a8a-44b7-9070-69b5bb1dd0c4)
+Setting up the index page
+
+- Add to the urls.py codebase in the project directory before doing the same with views.py
+- A basic message should be displayed on your local environment.
+
+Deploy to Heroku
+
+- Create a new project on Heroku. After that, go to the settings tab and reveal config vars. Add a key of DISABLE_COLLECTSTATIC and a value of 1 before clicking Add.
+
+In GitPod
+
+- pip3 install gunicorn
+- pip3 freeze --local > requirements.txt
+- echo "web: gunicorn bytetoeat.wsgi" > Procfile
+- Set DEBUG to False in settings.py and also add ’.herokuapp.com’ to ALLOWED_HOSTS
+- Commit and push to GitHub
+
+In Heroku
+- Go to the Deploy tab for this created project.
+- In the deployment method, select GitHub
+- Find the bytetoeat repository and select it.
+- Deploy branch to start a manual deployment of the main branch.
+- Click on open app to view the deployed project.
+- Open resources and choose an eco dyno, a lightweight container.
+- Verify that there is no existing Postgres database add-on. If there is one, you can destroy it, otherwise the costs can be significant.
+
+Local environment
+
+- Set DEBUG to True
+- env.py: Fill out the file to set an environment variable called DATABASE_URL to the database that is being used. 
+- Add env.py to .gitignore
+- pip3 install dj-database-url psycopg2
+- pip3 freeze --local > requirements.txt
+- Import the following code into bytetoeat/settings.py: 
+
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+	import env
+
+- Set up the database link in settings.py to read from env.py locally or from the DATABASE_URL environment variable on Heroku
+- Run python3 manage.py migrate
+- python3 manage.py createsuperuser # Choose a username, email and password for super user access to Django
+- Git commit and push again and re-deploy the project on Heroku
+
+Heroku
+
+- Finally make sure again that there are no database addons on Heroku and that the DATABASE_URL has been set correctly.
+
+Final steps
+
+- DEBUG should be off on deployment, or a method found to automatically switch it off as it has been done in this project.
+- No secret information nominally found in env.py or environment variables should be exposed onto public respositories or websites.
 
 ## Technology
 
