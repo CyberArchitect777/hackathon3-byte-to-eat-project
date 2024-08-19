@@ -39,7 +39,7 @@ The full-time developers:
 * Barrie Millar - (https://github.com/CyberArchitect777)
 * Samuel Parker - (https://github.com/SamuelParkerTech)
 
-Additional development only (due to other course / personal committments):
+Additional development only (due to other course / personal commitments):
 
 * Leander Otis - (https://github.com/LO-CI24)
 * Jamie Pudsey - (https://github.com/JPudsey-11)
@@ -66,30 +66,36 @@ Won't do:
 - A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
 - Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
 
+A [Google document](https://docs.google.com/document/d/1tP5J2UAh9JbXni9sQfab1tEwxLOkr21A9vTms7MyAY4). A [Miro Board](https://miro.com/app/board/uXjVKpKknpw=/) was also established for the same reason. A screenshot of this board can be seen below. 
+
+![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
+
 ## Repository, Project Board and Deployment
 
 Our project details can be found in the following places. 
 
 Project Board - (https://github.com/users/CyberArchitect777/projects/11)
-GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
-Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
 
-Miro Board
-https://miro.com/app/board/uXjVKpKknpw=/
+GitHub Repository - (https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project)
+
+Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.herokuapp.com)
 
 ## Design
 
-Purple: #5058A8 \
-Fork grey: #BCBEC0 \
-Circle grey: #F0F2F1 
+### Colour scheme
+![byte2eat-color-palette](https://github.com/user-attachments/assets/2511d38b-ab7d-4f2f-9196-c4f777755b3b)
 
-We also used the Miro board for inspiration and ideas.
+Site: Purple: (#5058A8) \ White (#FFFFFF)
 
-![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
+Logo: Purple (#5058A8) \ Fork grey (#BCBEC0) \ Circle grey (#F0F2F1)
+
+UI is Minimalist and simple with a tech-y edge to ensure an easy-to-use site.
 
 
-## Wireframes 
-Website Wireframes were created in Balsalmiq.
+### Wireframes
+
+To design the project, we used Balsalmiq to create a number of wireframes. Our design concepts are shown below:-
+
 Main Page \
 ![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
 
@@ -102,57 +108,110 @@ Register Food / Review \
 
 ## Features
 
-The main features are a login page, a user dashboard with the ability to post new reviews of takeaways and view those takeaways. 
+The main features of the site are a login management system, a user dashboard to view, create, edit and delete takeaway reviews and an about page. The screenshots below show the site as seen on desktop and mobile.
 
-### Main Page (Not logged in)
-![image](https://github.com/user-attachments/assets/4efc420f-3485-4d9a-b725-bdc8ec6deb63)
+Once entering the website, the user is greeted with the following page on desktop and on mobile. Note the different ways that the logged in status is shown on desktop and mobile to provide clarity to users on both platforms.
 
-### Sign in Page
-![image](https://github.com/user-attachments/assets/1e7c2cb1-1c4c-4fb9-9720-3b56daefff14)
+![Desktop image of the index page when logged out](docs/images/desktop-index-loggedout.png)
+![Mobile image of the index page when logged out](docs/images/mobile-index-loggedout.png) 
 
-### Main Page (logged in)
-![image](https://github.com/user-attachments/assets/add01b10-2872-4b2e-94c4-72f8f26e8fa7)
-We are likely to add more functionality to this page, or have it redirect to the user dashboard. 
+From here, you can register for the site as shown below.
 
-### 'My Reviews' / User Dashboard
-![image](https://github.com/user-attachments/assets/1abb16c8-ee12-4a8a-ae63-a1eda4a8e653)
+![alt text](docs/images/desktop-register.png)
+![alt text](docs/images/mobile-signup.png)
 
-### Add Review Page
-![image](https://github.com/user-attachments/assets/7e90d289-449a-4e41-8020-24a507842543)
+If you are already signed up, you can log in from this page instead.
 
-### Edit/Delete a Review Page
-![image](https://github.com/user-attachments/assets/3ace9008-d151-400b-98ba-c4eeee62b422)
+![alt text](docs/images/desktop-login.png) 
+![alt text](docs/images/mobile-login.png) 
 
-### About Page
-![image](https://github.com/user-attachments/assets/389e8acf-1487-41e4-a514-69b01fb7891c)
+Once logged in via the register page or log in page, the following index page is shown.
 
-### Logout Page
-![image](https://github.com/user-attachments/assets/9c455384-7546-400a-8eee-a0c04c9b61fa)
+![alt text](docs/images/desktop-index-loggedin.png)
+![alt text](docs/images/mobile-index-loggedin.png) 
+
+When the user wants to sign out, they can do it here.
+
+![alt text](docs/images/desktop-logout.png) 
+![alt text](docs/images/mobile.logout.png)
 
 ## Deployment Via Heroku
 
-First make sure the Debug is set to false \
-In our project Debug was set via env.py so was active locally but disabled on Heroku automatically. \
-![image](https://github.com/user-attachments/assets/e367bb35-3372-4c39-8672-5544cad9e9d8)
+Byte 2 Eat was deployed to Heroku as a project early on in the development. The following information is what was used to achieve this. 
 
-Connect your Github to your Heroku \
-![image](https://github.com/user-attachments/assets/d8a7aed2-8c8e-4df5-92ce-286396be909f)
+Setting up a fresh project
 
-Make sure VARS are set correctly. \
-![image](https://github.com/user-attachments/assets/cd552e8e-2fc9-4929-8f65-912860ec5c69)
+- pip3 install django
+- django-admin startproject bytetoeat .
+- python3 manage.py startapp index
+- python3 manage.py runserver
+- Make sure the local environment is added to ALLOWED_HOST in settings.py
+- Check the project works
 
-In the deploy tab, scroll down and deploy MAIN Branch \
-![image](https://github.com/user-attachments/assets/20234481-4a8a-44b7-9070-69b5bb1dd0c4)
+Setting up the index page
+
+- Add to the urls.py codebase in the project directory before doing the same with views.py
+- A basic message should be displayed on your local environment.
+
+Deploy to Heroku
+
+- Create a new project on Heroku. After that, go to the settings tab and reveal config vars. Add a key of DISABLE_COLLECTSTATIC and a value of 1 before clicking Add.
+
+In GitPod
+
+- pip3 install gunicorn
+- pip3 freeze --local > requirements.txt
+- echo "web: gunicorn bytetoeat.wsgi" > Procfile
+- Set DEBUG to False in settings.py and also add ’.herokuapp.com’ to ALLOWED_HOSTS
+- Commit and push to GitHub
+
+In Heroku
+- Go to the Deploy tab for this created project.
+- In the deployment method, select GitHub
+- Find the bytetoeat repository and select it.
+- Deploy branch to start a manual deployment of the main branch.
+- Click on open app to view the deployed project.
+- Open resources and choose an eco dyno, a lightweight container.
+- Verify that there is no existing Postgres database add-on. If there is one, you can destroy it, otherwise the costs can be significant.
+
+Local environment
+
+- Set DEBUG to True
+- env.py: Fill out the file to set an environment variable called DATABASE_URL to the database that is being used. 
+- Add env.py to .gitignore
+- pip3 install dj-database-url psycopg2
+- pip3 freeze --local > requirements.txt
+- Import the following code into bytetoeat/settings.py: 
+
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+	import env
+
+- Set up the database link in settings.py to read from env.py locally or from the DATABASE_URL environment variable on Heroku
+- Run python3 manage.py migrate
+- python3 manage.py createsuperuser # Choose a username, email and password for super user access to Django
+- Git commit and push again and re-deploy the project on Heroku
+
+Heroku
+
+- Finally make sure again that there are no database addons on Heroku and that the DATABASE_URL has been set correctly.
+
+Final steps
+
+- DEBUG should be off on deployment, or a method found to automatically switch it off as it has been done in this project.
+- No secret information nominally found in env.py or environment variables should be exposed onto public respositories or websites.
 
 ## Technology
 
 * Github - Version Control & Project Kanban / Issues
 * Gitpod - Code Editor
 * Django - Python Framework
-* BootStrap - CSS Framework
-* Google Fonts - Open Sans Font https://fonts.google.com
-* Miro - Project Ideas Board & ERD Creation https://miro.com/
-* Coolors.co - Colour pallette/tone helper https://coolors.co/
+* Bootstrap - CSS Framework
+* [Google Fonts](https://fonts.google.com) - Open Sans Font 
+* [Miro](https://miro.com/) - Project Ideas Board & ERD Creation 
+* [Coolors.co](https://coolors.co/) - Colour palette/tone helper 
+* [Balsamiq](https://balsamiq.com/) used to create wireframes
 * Google Docs - Sharing and hosting files
 * AllAuth
 * Am I Responsive https://ui.dev/amiresponsive?url=https%3A%2F%2Fbytes.de
@@ -192,17 +251,38 @@ No issues - ![image](https://github.com/user-attachments/assets/a5bce627-5103-4a
 CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-validator/ and posted no issues. 
 ![image](https://github.com/user-attachments/assets/4353bcf2-ec95-466d-a20e-ab277c556564)
 
-
 ## Javascript
-Javascript was testing using JS Hint: https://jshint.com/
+No JavaScript was used in this project. 
 
 ## Python PEP 8 CI Checker - https://pep8ci.herokuapp.com/
 
+### User Profile Pages - checked and clear
+
+### Index - checked and clear
+
+### About - checked and clear
 
 ## Credits
+### Resources Used and Consulted
+- [Stack Overflow](https://stackoverflow.com/) for troubleshooting and understanding coding concepts.
+- [MDN web docs](https://developer.mozilla.org/) for helpful guides on all things coding.
+- [W3Schools](https://www.w3schools.com/) for helpful guides on all things coding.
+- [Django Project](https://docs.djangoproject.com/) for helpful guides on all things Django.
+- [Bootstrap](https://getbootstrap.com/) for docs about Bootstrap.
+- [ChatGPT](https://openai.com/chatgpt/) used throughout for coding advice and inspiration.
+- [Blackbox AI](https://www.blackbox.ai/) used throughout for coding advice and inspiration.
+- [Font Awesome](https://fontawesome.com/) for the social media icons in footer.
+- Background image - [Food delivery doodle vector with eco-friendly packagings by rawpixel.com via Freepik](https://www.freepik.com/free-vector/food-delivery-doodle-vector-with-eco-friendly-packagings_18880323.htm)
 
-## Content Credit
-Images from Unsplash.com & Freepik.com
+### Special Thanks to
+- [Spencer Barriball](https://github.com/5pence/demodemo/blob/main/assets/js/script.js)
+- Code Institute's Subject Matter Expert Kevin
+- Code Institute's Coding Coach Martin
+- Code Institute's Coding Coach Mark
+- Code Institute's Coding Bootcamp Tutor Lewis
+- Code Institute's Cohort Facilitator David
+- Everyone in the April 2024 WW Bootcamp
+- All of our family and friends for putting up with the late nights, testing requests and making LOTS of cups of tea.
 
 ## Further Thoughts
 

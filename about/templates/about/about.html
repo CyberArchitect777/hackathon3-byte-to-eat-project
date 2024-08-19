@@ -7,7 +7,7 @@
 <div class="container-fluid mt-5">
     <div class="container" id="aboutbyte">
         <div class="row justify-content-center">
-            <div class="col-md-6 col-12 mb-4">
+            <div class="col-md-10 col-12 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{ about.title }}</h5>
@@ -26,23 +26,28 @@
 <!-- About US  -->
 <div class="container-fluid my-5" id="snackprofile">
     <div class="row justify-content-center">
+        <h2>Meet the Team!</h2>
         <!-- Code to be iterated to create numerous cards from database -->
-        {% for profile in snack_profile_list %}
-        <div class="col-md-4 col-12 mb-4 link_highlight">
-            <div class="card border-warning">
-                {% if "placeholder" in snack_profile.image.url %}
-                <img src="{% static '/images/byte2eatlogo.png' %}" class="card-img-top" alt="(placeholder image)">
-                {% else %}
-                <img src="{{ snack_profile.image }}" class="card-img-top" alt="Profile Image">
-                <div class="card-body">
+        {% for profile in profile_list %}
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 link_highlight">
+            <div class="card border h-100">
+                <div class="image-container">
+                    {% if "placeholder" in profile.image.url %}
+                    <img src="{% static 'images/profile.jpg' %}" 
+                         class="card-img-top" 
+                         alt="(placeholder image)">
+                    {% else %}
+                    <img src="{{ profile.image.url }}" 
+                         class="card-img-top" 
+                         alt="Profile Image {{ profile.profile_name }}">
                     {% endif %}
-                    <h5 class="card-title">{{ snack_profile.profile_name }}</h5>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ profile.profile_name | safe }}</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>About: </strong>{{
-                        snack_profile.about_profile }}</li>
-                    <li class="list-group-item"><strong>Fun Fact: </strong>{{ snack_profile.funfact
-                        }}</li>
+                    <li class="list-group-item"><strong>About: </strong>{{ profile.about_profile | safe }}</li>
+                    <li class="list-group-item"><strong>Fun Fact: </strong>{{ profile.funfact | safe }}</li>
                 </ul>
             </div>
         </div>
@@ -50,5 +55,6 @@
         {% endfor %}
     </div>
 </div>
+
 
 {% endblock content %}

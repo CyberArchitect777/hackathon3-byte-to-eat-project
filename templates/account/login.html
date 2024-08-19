@@ -7,14 +7,14 @@
 
 {% block content %}
 
-<div class="container signing">
+<div class="container signing mt-5 pb-4">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign In" %}</h3>
+      <h1 class="mt-2">{% trans "Log in" %}</h1>
 
-      <p>{% blocktrans %}Welcome back to Byte 2 Eat.<br>
-        To leave a review and rating of your favourite takeaways, please log in.<br>
-        If you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+      <p class="m-3">{% blocktrans %}Welcome back to Byte 2 Eat.<br></p>
+        <p>To leave a review and rating of your favourite takeaways, please log in.<br></p>
+        <p>If you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
         first.{% endblocktrans %}</p>
     </div>
   </div>
