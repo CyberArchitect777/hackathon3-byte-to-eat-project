@@ -204,6 +204,14 @@ footer i {
     width: 270px;
 }
 
+/* Add review */
+
+#add-review label {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* Media queries */
 
 @media only screen and (min-width: 720px) {
