@@ -117,26 +117,42 @@ Once entering the website, the user is greeted with the following page on deskto
 
 From here, you can register for the site as shown below.
 
-![alt text](docs/images/desktop-register.png)
-![alt text](docs/images/mobile-signup.png)
+![Desktop image of the register page when logged out](docs/images/desktop-register.png)
+![Mobile image of the register page when logged out](docs/images/mobile-signup.png)
 
 If you are already signed up, you can log in from this page instead.
 
-![alt text](docs/images/desktop-login.png) 
-![alt text](docs/images/mobile-login.png) 
+![Desktop image of login page when logged out](docs/images/desktop-login.png)
+![Mobile image of the login page whe logged out](docs/images/mobile-login.png)
 
 Once logged in via the register page or log in page, the following index page is shown.
 
-![alt text](docs/images/desktop-index-loggedin.png)
-![alt text](docs/images/mobile-index-loggedin.png) 
+![Desktop index page when logged in](docs/images/desktop-index-loggedin.png)
+![Mobile index page when logged in](docs/images/mobile-index-loggedin.png) 
 
 When the user wants to sign out, they can do it here.
 
-![alt text](docs/images/desktop-logout.png) 
+![Desktop sign out page when logged in](docs/images/desktop-logout.png) 
+![Mobile sign out page when logged in](docs/images/mobile-logout.png)
+
+Screenshots for the rest of the site can be seen below:
+
+![](docs/images/aboutp1.png)
+![](docs/images/aboutp2.png)
+
+![alt text](docs/images/desktop-delete-review-modal.png)
+![alt text](docs/images/desktop-addreview.png)
+![alt text](docs/images/desktop-editreview.png)
+![alt text](docs/images/desktop-review.png)
+![alt text](docs/images/mobile-addreview.png)
+![alt text](docs/images/mobile-delete-review.png)
+![alt text](docs/images/mobile-index-loggedin.png)
+![alt text](docs/images/mobile-index-loggedout.png)
+![alt text](docs/images/mobile-login.png)
 ![alt text](docs/images/mobile-logout.png)
-
-![user-review-dashboard-with-reviews](https://github.com/user-attachments/assets/1ae89050-bc14-453a-b621-2348a0121e5f)
-
+![alt text](docs/images/mobile-review.png)
+![alt text](docs/images/mobile-signup.png)
+![alt text](docs/images/mobile.logout.png)
 
 ## Deployment Via Heroku
 
@@ -221,28 +237,33 @@ Final steps
 
 ### Django Requirements
 
-* asgiref==3.8.1
-* cloudinary==1.40.0
-* dj-database-url==0.5.0
-* dj3-cloudinary-storage==0.0.6
-* Django==4.2.14
-* django-allauth==0.57.2
-* django-summernote==0.8.20.0
-* gunicorn==20.1.0
-* oauthlib==3.2.2
-* psycopg==3.2.1
-* PyJWT==2.9.0
-* python3-openid==3.2.0
-* requests-oauthlib==2.0.0
-* sqlparse==0.5.1
-* urllib3==1.26.19
-* whitenoise==5.3.0
+asgiref==3.8.1
+cloudinary==1.36.0
+crispy-bootstrap5==0.7
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
+Django==4.2.15
+django-allauth==0.57.2
+django-crispy-forms==2.3
+django-summernote==0.8.20.0
+gunicorn==20.1.0
+oauthlib==3.2.2
+psycopg2==2.9.9
+PyJWT==2.9.0
+python3-openid==3.2.0
+requests-oauthlib==2.0.0
+sqlparse==0.5.1
+urllib3==1.26.19
+whitenoise==5.3.0
+
 
 ## Future Features
 
 ## Testing
 
 Testing was done both manually and using Validators (see next section).
+
+Login and Sign out pages work accordingly and are responsive.Reviews page is responsive and works accordingly.Edit and Delete works, however no warning about deletion.About page seems responsive.Not responsive on all devices, but could be due to changing phone dimensions mid transition between pages.
 
 ## Validator Testing
 
