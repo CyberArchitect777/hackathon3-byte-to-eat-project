@@ -135,6 +135,9 @@ When the user wants to sign out, they can do it here.
 ![alt text](docs/images/desktop-logout.png) 
 ![alt text](docs/images/mobile.logout.png)
 
+![user-review-dashboard-with-reviews](https://github.com/user-attachments/assets/1ae89050-bc14-453a-b621-2348a0121e5f)
+
+
 ## Deployment Via Heroku
 
 Byte 2 Eat was deployed to Heroku as a project early on in the development. The following information is what was used to achieve this. 
