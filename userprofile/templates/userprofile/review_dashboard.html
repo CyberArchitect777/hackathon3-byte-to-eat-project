@@ -86,7 +86,7 @@
                     <a href="{% url 'edit_review' review.pk %}"
                         class="btn btn-primary btn-sm me-auto px-3 py-2">Edit</a>
                     <p class="card-text text-center ms-1">{{ review.rating|star_rating|safe }}</p>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete-modal{{ review.pk }}" aria-label="Deletes the current element shown" class="btn btn-danger btn-sm ms-auto py-2">Delete</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#delete-modal{{ review.pk }}" aria-label="Deletes the review chosen" class="btn btn-danger btn-sm ms-auto py-2">Delete</a>
                 </div>
                 <p class="card-text text-center">{{ review.review_title }}</p>
                 <p class="card-text text-center">{{ review.review_content }}</p>
