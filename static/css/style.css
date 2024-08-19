@@ -11,6 +11,10 @@ main {
     background: white url("https://res.cloudinary.com/dp1ehadna/image/upload/v1723822653/heroimage_pdpk38.jpg") no-repeat center/cover fixed;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 /* Header styles */
 
 header, nav {
@@ -160,6 +164,20 @@ footer i {
     vertical-align: middle;
 }
 
+#review-accordion {
+    display: none;
+}
+
+#table-element {
+    display: none;
+}
+
+#review-area .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 270px;
+}
 
 /* Media queries */
 
@@ -170,5 +188,20 @@ footer i {
     #company-logo {
         max-width: 600px;
     }
+}
 
+@media only screen and (min-width: 992px) {
+    /* Review page */
+
+    #review-accordion {
+        display: none;
+    }
+
+    #table-element {
+        display: none;
+    }
+
+    .card {
+        display: block;
+    }
 }
