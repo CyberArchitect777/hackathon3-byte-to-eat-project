@@ -164,10 +164,6 @@ footer i {
     vertical-align: middle;
 }
 
-#review-accordion {
-    display: none;
-}
-
 #table-element {
     display: none;
 }
@@ -191,17 +187,15 @@ footer i {
 }
 
 @media only screen and (min-width: 992px) {
+    
     /* Review page */
 
-    #review-accordion {
-        display: none;
-    }
-
     #table-element {
-        display: none;
+        display: block;
+        text-align: center;
     }
 
-    .card {
-        display: block;
+    #review-area .card {
+        display: none;
     }
 }
