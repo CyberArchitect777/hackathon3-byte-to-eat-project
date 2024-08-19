@@ -39,7 +39,7 @@ The full-time developers:
 * Barrie Millar - (https://github.com/CyberArchitect777)
 * Samuel Parker - (https://github.com/SamuelParkerTech)
 
-Additional development only (due to other course / personal committments):
+Additional development only (due to other course / personal commitments):
 
 * Leander Otis - (https://github.com/LO-CI24)
 * Jamie Pudsey - (https://github.com/JPudsey-11)
@@ -66,7 +66,7 @@ Won't do:
 - A public facing area showing all reviewed takeaways as this is not applicable to our project idea.
 - Email / reset password login as the development of this feature requires an email server and is beyond the scope of this project.
 
-A Google document was set up to share and discuss ideas (https://docs.google.com/document/d/1tP5J2UAh9JbXni9sQfab1tEwxLOkr21A9vTms7MyAY4). A Miro Board (https://miro.com/app/board/uXjVKpKknpw=/) was also established for the same reason. A screenshot of this board can be seen below. 
+A [Google document](https://docs.google.com/document/d/1tP5J2UAh9JbXni9sQfab1tEwxLOkr21A9vTms7MyAY4). A [Miro Board](https://miro.com/app/board/uXjVKpKknpw=/) was also established for the same reason. A screenshot of this board can be seen below. 
 
 ![image](https://github.com/user-attachments/assets/e97bbda1-9818-4b91-af25-67fdccdd7ed0)
 
@@ -83,10 +83,14 @@ Heroku Live Deployment - (https://hackathon3-byte-to-eat-project-25fab4e92590.he
 ## Design
 
 ### Colour scheme
+![byte2eat-color-palette](https://github.com/user-attachments/assets/2511d38b-ab7d-4f2f-9196-c4f777755b3b)
 
 Site: Purple: (#5058A8) \ White (#FFFFFF)
 
 Logo: Purple (#5058A8) \ Fork grey (#BCBEC0) \ Circle grey (#F0F2F1)
+
+UI is Minimalist and simple with a tech-y edge to ensure an easy-to-use site.
+
 
 ### Wireframes
 
@@ -203,10 +207,11 @@ Final steps
 * Github - Version Control & Project Kanban / Issues
 * Gitpod - Code Editor
 * Django - Python Framework
-* BootStrap - CSS Framework
-* Google Fonts - Open Sans Font https://fonts.google.com
-* Miro - Project Ideas Board & ERD Creation https://miro.com/
-* Coolors.co - Colour pallette/tone helper https://coolors.co/
+* Bootstrap - CSS Framework
+* [Google Fonts](https://fonts.google.com) - Open Sans Font 
+* [Miro](https://miro.com/) - Project Ideas Board & ERD Creation 
+* [Coolors.co](https://coolors.co/) - Colour palette/tone helper 
+* [Balsamiq](https://balsamiq.com/) used to create wireframes
 * Google Docs - Sharing and hosting files
 * AllAuth
 * Am I Responsive https://ui.dev/amiresponsive?url=https%3A%2F%2Fbytes.de
@@ -246,9 +251,8 @@ No issues - ![image](https://github.com/user-attachments/assets/a5bce627-5103-4a
 CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-validator/ and posted no issues. 
 ![image](https://github.com/user-attachments/assets/4353bcf2-ec95-466d-a20e-ab277c556564)
 
-
 ## Javascript
-Javascript was testing using JS Hint: https://jshint.com/
+No JavaScript was used in this project. 
 
 ## Python PEP 8 CI Checker - https://pep8ci.herokuapp.com/
 
@@ -259,9 +263,26 @@ Javascript was testing using JS Hint: https://jshint.com/
 ### About - checked and clear
 
 ## Credits
+### Resources Used and Consulted
+- [Stack Overflow](https://stackoverflow.com/) for troubleshooting and understanding coding concepts.
+- [MDN web docs](https://developer.mozilla.org/) for helpful guides on all things coding.
+- [W3Schools](https://www.w3schools.com/) for helpful guides on all things coding.
+- [Django Project](https://docs.djangoproject.com/) for helpful guides on all things Django.
+- [Bootstrap](https://getbootstrap.com/) for docs about Bootstrap.
+- [ChatGPT](https://openai.com/chatgpt/) used throughout for coding advice and inspiration.
+- [Blackbox AI](https://www.blackbox.ai/) used throughout for coding advice and inspiration.
+- [Font Awesome](https://fontawesome.com/) for the social media icons in footer.
+- Background image - [Food delivery doodle vector with eco-friendly packagings by rawpixel.com via Freepik](https://www.freepik.com/free-vector/food-delivery-doodle-vector-with-eco-friendly-packagings_18880323.htm)
 
-## Content Credit
-Images from Unsplash.com & Freepik.com
+### Special Thanks to
+- [Spencer Barriball](https://github.com/5pence/demodemo/blob/main/assets/js/script.js)
+- Code Institute's Subject Matter Expert Kevin
+- Code Institute's Coding Coach Martin
+- Code Institute's Coding Coach Mark
+- Code Institute's Coding Bootcamp Tutor Lewis
+- Code Institute's Cohort Facilitator David
+- Everyone in the April 2024 WW Bootcamp
+- All of our family and friends for putting up with the late nights, testing requests and making LOTS of cups of tea.
 
 ## Further Thoughts
 
