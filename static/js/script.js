@@ -45,3 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Easter Egg Quote / checks IF JS is running
+console.log("Jules: 'They call it a Royale with Cheese.'");
