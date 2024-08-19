@@ -14,14 +14,22 @@ from django.views.generic import TemplateView # star ratings instead of numbers
 @login_required
 def review_dashboard(request):
 
-    sort_by = request.GET.get("sort_by", "created_on") # Default sort by date review is created on
-    sort_order = request.GET.get("sort_order", "asc") # Default sort order is ascending
+    allowed_sort_fields = [ "takeaway_name", "food_type", "rating", "created_on" ]
+    allowed_direction_field = "sort_order"
     
-    if sort_order == "desc": # If sort order is descending
-            sort_by = f'-{sort_by}'
+    user_reviews = Review.objects.filter(poster=request.user)
 
-    user_reviews = Review.objects.filter(poster=request.user).order_by(sort_by) # Filters reviews so current user can only see their own
-        
+    if request.method == "GET":
+        selected_sort = request.GET.get("sort_by", "created_on")
+        selected_direction = request.GET.get("sort_order", "asc")
+        if selected_sort in allowed_sort_fields:
+            direction_symbol = ""
+            print("got into accepted fields")
+            if selected_direction == "desc":
+                print("desc noted")
+                direction_symbol = "-"
+            user_reviews = user_reviews.order_by(direction_symbol + selected_sort)
+
     return render(
         request, 
         "userprofile/review_dashboard.html", {

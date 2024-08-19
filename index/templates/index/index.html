@@ -27,20 +27,20 @@
   <!-- If user is NOT logged in display sign in details -->
   {% if user.is_authenticated %}
     <div class="row mb-3">
-      <div class="col-md-8 mt-3 offset-md-2">
-        <a href="{% url 'review_dashboard' %}" class="btn signingbutton">Take me to my Dashboard</a>
+      <div class="col-md-8 mt-3 offset-md-0  d-flex justify-content-center flex-grow-1">
+        <a href="{% url 'review_dashboard' %}" class="btn signingbutton mb-4 d-flex justify-content-center align-items-center">Take me to my Dashboard</a>
       </div>
     </div>
   {% else %}
     <div class="row mb-3">
       <div class="col-md-8 mt-3 offset-md-2">
-        <form class="login mb-4" method="POST" action="{% url 'account_login' %}">
+        <form class="login mb-4 d-flex justify-content-center" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           {{ form.as_p }}
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button class="btn signingbutton" type="submit">{% trans "Log In" %}</button>
+          <button class="btn signingbutton mt-3 d-flex justify-content-center align-items-center" type="submit">{% trans "Log In" %}</button>
         </form>
       </div>
     </div>
