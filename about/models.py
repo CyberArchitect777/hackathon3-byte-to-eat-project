@@ -4,6 +4,8 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 
 # Model for About Page (details can be updated via the admin panel)
+
+
 class About(models.Model):
     title = models.CharField(max_length=200)
     about_byte2eat = models.TextField()
@@ -13,7 +15,7 @@ class About(models.Model):
         return self.title
 
 
-#Model to add About us Cards (can be added via admin as well)
+# Model to add About us Cards (can be added via admin as well)
 
 class Snack_Profile(models.Model):
     """
