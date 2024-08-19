@@ -264,19 +264,26 @@ Javascript was testing using JS Hint: https://jshint.com/
 ### About - checked and clear
 
 ## Credits
-
-## Content Credit
-
-__Resources Used and Consulted:__ 
-- [ChatGPT](https://openai.com/chatgpt/) used throughout for coding advice and inspiration.
-- [Blackbox AI](https://www.blackbox.ai/) used throughout for coding advice and inspiration.
-- [Font Awesome](https://fontawesome.com/) for the social media icons in footer.
+### Resources Used and Consulted
 - [Stack Overflow](https://stackoverflow.com/) for troubleshooting and understanding coding concepts.
 - [MDN web docs](https://developer.mozilla.org/) for helpful guides on all things coding.
 - [W3Schools](https://www.w3schools.com/) for helpful guides on all things coding.
 - [Django Project](https://docs.djangoproject.com/) for helpful guides on all things Django.
 - [Bootstrap](https://getbootstrap.com/) for docs about Bootstrap.
+- [ChatGPT](https://openai.com/chatgpt/) used throughout for coding advice and inspiration.
+- [Blackbox AI](https://www.blackbox.ai/) used throughout for coding advice and inspiration.
+- [Font Awesome](https://fontawesome.com/) for the social media icons in footer.
 - Background image - [Food delivery doodle vector with eco-friendly packagings by rawpixel.com via Freepik](https://www.freepik.com/free-vector/food-delivery-doodle-vector-with-eco-friendly-packagings_18880323.htm)
+
+### Special Thanks to
+- [Spencer Barriball](https://github.com/5pence/demodemo/blob/main/assets/js/script.js)
+- Code Institute's Subject Matter Expert Kevin
+- Code Institute's Coding Coach Martin
+- Code Institute's Coding Coach Mark
+- Code Institute's Coding Bootcamp Tutor Lewis
+- Code Institute's Cohort Facilitator David
+- Everyone in the April 2024 WW Bootcamp
+- All of our family and friends for putting up with the late nights, testing requests and making LOTS of cups of tea.
 
 ## Further Thoughts
 
