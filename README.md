@@ -85,7 +85,7 @@ Fork grey: #BCBEC0 \
 Circle grey: #F0F2F1 
 
 ## Wireframes 
-Website Wireframes were created in Balsalmiq.
+Website Wireframes were created in Balsalmiq. \
 Main Page \
 ![byte_2_eat_-_home_720](https://github.com/user-attachments/assets/95ec1821-43f2-4433-8273-8c70df7a7a80)
 
@@ -109,6 +109,11 @@ The main features are a login page, a user dashboard with the ability to post ne
 ### Main Page (logged in)
 ![image](https://github.com/user-attachments/assets/add01b10-2872-4b2e-94c4-72f8f26e8fa7)
 We are likely to add more functionality to this page, or have it redirect to the user dashboard. 
+
+### Updated version of the main page 
+
+![image](https://github.com/user-attachments/assets/0c75b65c-7a6f-454a-b7a2-b36e95969c65)
+
 
 ### 'My Reviews' / User Dashboard
 ![image](https://github.com/user-attachments/assets/1abb16c8-ee12-4a8a-ae63-a1eda4a8e653)
@@ -193,6 +198,12 @@ CSS Validator testing used the jigsaw validator: https://jigsaw.w3.org/css-valid
 Javascript was testing using JS Hint: https://jshint.com/
 
 ## Python PEP 8 CI Checker - https://pep8ci.herokuapp.com/
+
+### User Profile Pages
+urls.py \
+![image](https://github.com/user-attachments/assets/5eef4c00-f015-44b8-b6da-4d51daba7ea4)
+views.py \
+![image](https://github.com/user-attachments/assets/ccf7eb2f-52dd-4f48-b7a6-d0ede8c32b4c)
 
 
 ## Credits
