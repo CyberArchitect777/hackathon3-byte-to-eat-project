@@ -12,7 +12,7 @@
 <p> What did you like about your takeaway? What did you not like? Would you order from them again? Add your reviews notes below.</p>
 
 
-    <form method="post">
+    <form method="post" id="add-review">
     <!-- This token protects app from Cross-Site Request Forgery (CSRF) attacks, ensures submission comes from authenticated user -->
     {% csrf_token %}
     <!-- Makes form using Crispy Forms -->
