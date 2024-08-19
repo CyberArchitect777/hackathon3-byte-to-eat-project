@@ -1,8 +1,11 @@
-from django.core.exceptions import ValidationError  # Import used to raise validation errors in forms
-from django.contrib.auth.models import User  # Import Django's built-in User model
+from django.core.exceptions import ValidationError
+# Import used to raise validation errors in forms
+from django.contrib.auth.models import User
+# Import Django's built-in User model
 from django import forms
-from .models import Review # Import Review model
+from .models import Review  # Import Review model
 import datetime  # For handling date and time operations
+
 
 class ReviewForm(forms.ModelForm):
     RATING_CHOICES = [(i, str(i)) for i in range(1, 6)]
@@ -16,7 +19,8 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        fields = ('takeaway_name', 'food_type', 'review_title', 'review_content', 'rating',)
+        fields = ('takeaway_name', 'food_type', 'review_title',
+                  'review_content', 'rating',)
         widgets = {
             'review_title': forms.TextInput(
                 attrs={

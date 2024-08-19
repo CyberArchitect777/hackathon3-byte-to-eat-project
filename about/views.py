@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import About, Snack_Profile
 from django.views import generic
-from django.views.generic import TemplateView # star ratings instead of numbers
 
 
 def about(request):
