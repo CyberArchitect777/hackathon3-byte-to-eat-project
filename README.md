@@ -52,7 +52,7 @@ Using Agile ideals, the project was designed with the principle of minimum viabl
 
 Must-do:
 
-- A login and registration system for our users to sign in to their private review areas
+- A login and registration system for our users to sign in to their private review areas.
 - A review screen where comments could be added, edited or deleted.
 - Additional pages for form additions to achieve this as needed.
 - A site that was effortless to use in order to allow users to quickly check in and out to submit their own ideas.
@@ -89,7 +89,7 @@ Site: Purple: (#5058A8) \ White (#FFFFFF)
 
 Logo: Purple (#5058A8) \ Fork grey (#BCBEC0) \ Circle grey (#F0F2F1)
 
-UI is Minimalist and simple with a tech-y edge to ensure an easy-to-use site.
+UI is minimalist and simple with a tech-y edge to ensure a clean, easy-to-use site.
 
 
 ### Wireframes
@@ -134,6 +134,9 @@ When the user wants to sign out, they can do it here.
 
 ![alt text](docs/images/desktop-logout.png) 
 ![alt text](docs/images/mobile.logout.png)
+
+![user-review-dashboard-with-reviews](https://github.com/user-attachments/assets/1ae89050-bc14-453a-b621-2348a0121e5f)
+
 
 ## Deployment Via Heroku
 
